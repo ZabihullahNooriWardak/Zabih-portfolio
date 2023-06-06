@@ -1,3 +1,115 @@
-h1 {
-  color: red;
+/* crete Rounded Font */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/* body{
+    width: 375px;
+} */
+html{
+    font-size: 62.5%;
+}
+/* nav.menu ul{
+    display: none;
+} */
+/* #burger-menu{
+    display: none;
+} */
+header{
+padding-top:2.6rem;
+padding-bottom: 2.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  #3E3C3C;
+}
+header span{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+header nav ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.menu{
+    /* flex-grow:1; */
+    flex-basis: 30%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content:space-around;
+}
+nav ul li {
+list-style-type: none;
+display: inline;
+}
+/* Header Section Ends */
+
+/* Hero Section Starts */
+div.icons ul li{
+   margin-bottom: 1rem;
+   margin-right: 2rem;
+   margin-left: 3.6rem;
+   list-style-type: none;
+font-size: 2rem;
+}
+ul li a i{
+    color: #CFCFCF;
+}
+main{
+    background-color:#1C1A19;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.MainParagraph h1{
+    color: white;
+    font-family: 'Crete Round', serif;
+    font-size: 7.2rem;
+    color:#F55800;
+}
+
+.MainParagraph p:first-of-type{
+    /* margin-bottom: 8rem; */
+    font-family: 'Inter', sans-serif;
+    /* line-height: 44px; */
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.MainParagraph p,.MainParagraph h1{
+    margin-bottom: 2.4rem;
+    margin-left: 10.2rem;
+}
+.MainParagraph p:last-child{
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #F4F5F7;
+}
+div.image{
+    align-self: flex-start;
+}
+div.image img{
+    height: 70vh;
+    width: auto;
+
+}
+
+/* 
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 50%;
+    }
+} */
