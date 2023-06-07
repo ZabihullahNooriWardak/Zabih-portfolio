@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 /* Inter Font */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +23,8 @@ header {
 }
 header span {
   font-weight: 700;
-  font-size: 2rem;
-  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-family: "Licorice", cursive;
   color: #fff;
 }
 header nav ul li {
@@ -44,21 +46,21 @@ nav ul li {
   display: inline;
 }
 #burger-menu {
-    display: none;
+  display: none;
   color: #fff;
   font-size: 2rem;
 }
 /* Header Section Ends */
 
 /* Hero Section Starts */
-div.icons ul li {
+div.desktop-icons ul li {
   margin-bottom: 1rem;
   margin-right: 2rem;
   margin-left: 3.6rem;
   list-style-type: none;
   font-size: 2rem;
 }
-ul li a i {
+.desktop-icons ul li a i {
   color: #cfcfcf;
 }
 main {
@@ -92,6 +94,12 @@ div.MainParagraph h1 {
   font-weight: 400;
   color: #f4f5f7;
 }
+div.mobile-icons {
+  display: none;
+}
+#mobile {
+  display: none;
+}
 div.image {
   align-self: flex-start;
 }
@@ -102,27 +110,27 @@ div.image img {
 /* Hero Section Ends */
 
 /* projects section Starts */
-.project-first{
+.project-first {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap:2rem;
+  column-gap: 2rem;
   align-items: center;
   align-content: flex-end;
   margin-left: 10rem;
 }
-.project-second{
+.project-second {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start;
+  justify-content: flex-start;
   column-gap: 2rem;
-  align-items:center ;
+  align-items: center;
   /* align-content: space-around; */
   margin-left: 10rem;
 }
 section#projects-section img {
-  width:37.5rem;
+  width: 37.5rem;
   min-height: 35.5rem;
 }
 #projects-section hr {
@@ -147,16 +155,16 @@ section#projects-section img {
   /* margin-left: 2rem; */
 }
 div.multi-post-story {
-  width:37.5rem;
+  width: 37.5rem;
   background-color: red;
 }
-div.multi-post-story > p:first-of-type{
-  color: #091E42;
+div.multi-post-story > p:first-of-type {
+  color: #091e42;
   font-family: "Crete Round", serif;
-font-style: normal;
-font-weight: 400;
-font-size: 4rem;
-line-height: 5.2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
 }
 div.multi-post-story #second {
   font-size: 2rem;
@@ -206,11 +214,10 @@ div.multi-post-story > :last-child {
 }
 div.see {
   width: 100%;
-  height: 40.5rem;
+  height: auto;
   background-image: url(images/professional.png);
   background-size: cover;
   position: relative;
-  /* right: 10rem; */
 }
 div.see button {
   width: 100%;
@@ -243,8 +250,8 @@ div.data-dashbord h4 {
   margin-left: 2.4rem;
 }
 div.data-dashbord p {
-    overflow-x: auto;
-    font-family: "Inter", sans-serif;
+  overflow-x: auto;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -275,47 +282,254 @@ div.data-dashbord div.button button.html {
   margin-left: 2.6rem;
 }
 
-.container-projects-grid{
+.container-projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
   gap: 2.4rem;
+}
+/* project Section Ends */
+
+/* About Me Section Starts */
+
+section.about-me {
+  padding-left: 14rem;
+  padding-top: 13rem;
+  background: #262626;
+}
+div.about-me > p:first-child {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 8.2rem;
+  color: #f55800;
+}
+div.about-me > p:first-child + p {
+  font-family: "Inter", sans-serif;
+  margin-top: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #f4f5f7;
+}
+section.about-me div.container {
+  display: flex;
+  justify-content: space-around;
+}
+section.about-me div.about-me button {
+  width: 15.6rem;
+  height: 4.8rem;
+  background: #f55800;
+  border: none;
+  margin-top: 2.4rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+section.about-me div.container img {
+  width: 40%;
+  height: auto;
+}
+section.about-me hr {
+  margin-right: 14.2rem;
+  margin-top: 13.9rem;
+  margin-bottom: 14.6rem;
+  color: fff;
+}
+div.skills ul li {
+  list-style-type: none;
+  margin: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 4.3rem;
+  color: #fff;
+}
+div.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+div.skills ul li:first-child {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #fff;
+  margin-bottom: 4.4rem;
+}
+div.skills ul li img {
+  margin-right: 1.2rem;
+}
+
+/* About Me Section Ends */
+
+/*Footer Starts*/
+
+footer {
+  padding-left: 14rem;
+  padding-top: 13rem;
+  padding-right: 14.2rem;
+}
+
+div.container-footer {
+  margin-bottom: 16rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+/* footer p{
+  width: 45rem;
+  height: 25rem;
+} */
+footer p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: #262626;
+}
+footer input {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2.4rem;
+  border-bottom: solid 1px #dbd8d7;
+  width: 19rem;
+}
+footer textarea {
+  color: #3c3a39;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  height: 11.4rem;
+  background: #fbf8f7;
+  border: none;
+  width: 40rem;
+  height: 11rem;
+  margin-bottom: 2.4rem;
+}
+input[type="email"] {
+  width: 40rem;
+}
+footer button {
+  background: #f55800;
+  color: #ffffff;
+  padding: 1.2rem;
+  width: 12.2rem;
+  height: 4.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  border: none;
+}
+footer hr {
+  background: #dfe1e6;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+footer ul li i {
+  color: #505f79;
+  font-size: 3rem;
+}
+footer ul {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul li {
+  display: inline;
+  margin-left: 2rem;
 }
 
 /* Media Query */
 
 /* For Tablets And Ipads */
 @media screen and (max-width: 992px) {
-    html{
-        font-size: 55%;
-    }
-
+  html {
+    font-size: 55%;
+  }
 }
 
 /* For Smarth phones */
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  html{
+  html {
     font-size: 50%;
   }
-  div.MainParagraph h1{
+  div.mobile-icons {
+    display: block;
+  }
+  #mobile {
+    width: 80px;
+    height: 180px;
+    display: inline;
+    position: absolute;
+    right: 0.03rem;
+    top: 44rem;
+  }
+  div.mobile-icons ul li {
+    list-style-type: none;
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  div.mobile-icons ul li a {
+    color: #cfcfcf;
+  }
+  .mobile-icons img {
+    display: block;
+  }
+  main {
+    background-color: #1c1a19;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.data-dashbord {
+    height: 38.6rem;
+  }
+  div.MainParagraph h1 {
     font-size: 3.5rem;
   }
   div.image img {
     display: none;
   }
-  nav.menu{
+  nav.menu {
     display: none;
-}
-.project-first,.project-second{
-  margin-left: 10%;
-}
-#projects-section {
-  margin-left: 0rem;
-}
-main div.icons{
-  display: none;
-}
-#burger-menu{
-    display: block;
-}
   }
+  .project-first,
+  .project-second {
+    margin-left: 10%;
+  }
+  #projects-section {
+    margin-left: 0;
+  }
+  main div.desktop-icons {
+    display: none;
+  }
+  #burger-menu {
+    display: block;
+  }
+}
