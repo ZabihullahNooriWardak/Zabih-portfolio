@@ -274,11 +274,13 @@ div.data-dashbord div.button button {
 div.data-dashbord div.button button.html {
   margin-left: 2.6rem;
 }
-/* 
-div.container-my-projects{
+
+.container-projects-grid{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-} */
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-rows: auto;
+  gap: 2.4rem;
+}
 
 /* Media Query */
 
