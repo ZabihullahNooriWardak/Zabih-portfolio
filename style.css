@@ -27,12 +27,14 @@ header span {
   font-family: "Licorice", cursive;
   color: #fff;
 }
-header nav ul li {
+header nav ul li a {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
+  text-decoration: none;
 }
+
 .menu {
   flex-basis: 30%;
 }
@@ -63,6 +65,7 @@ div.desktop-icons ul li {
 .desktop-icons ul li a i {
   color: #cfcfcf;
 }
+
 main {
   background-color: #1c1a19;
   height: 100vh;
@@ -117,7 +120,6 @@ div.image img {
   column-gap: 2rem;
   align-items: center;
   align-content: flex-end;
-  margin-left: 10rem;
 }
 .project-second {
   margin-top: 2rem;
@@ -126,8 +128,6 @@ div.image img {
   justify-content: flex-start;
   column-gap: 2rem;
   align-items: center;
-  /* align-content: space-around; */
-  margin-left: 10rem;
 }
 section#projects-section img {
   width: 37.5rem;
@@ -137,26 +137,22 @@ section#projects-section img {
   color: #212121;
   height: 0;
   width: 40rem;
-  /* margin-right:7rem; */
 }
 
 #projects-section {
-  /* margin-top: 3rem; */
-  min-width: 375px;
-  margin-left: 10.1rem;
-  margin-right: 14.35rem;
-  margin-bottom: 3rem;
-  background-color: #e5e5e5;
+  margin-left: 14rem;
+  margin-bottom: 13rem;
+  padding-top: 13rem;
+  margin-right: 14.2rem;
+  background-color: #fff;
 }
 #projects-section div.project-first p {
   font-weight: 400;
   font-size: 4rem;
   font-family: "Crete Round", serif;
-  /* margin-left: 2rem; */
 }
 div.multi-post-story {
   width: 37.5rem;
-  background-color: red;
 }
 div.multi-post-story > p:first-of-type {
   color: #091e42;
@@ -214,10 +210,11 @@ div.multi-post-story > :last-child {
 }
 div.see {
   width: 100%;
-  height: auto;
   background-image: url(images/professional.png);
-  background-size: cover;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 43.5rem;
 }
 div.see button {
   width: 100%;
@@ -233,12 +230,37 @@ div.see button {
   line-height: 24px;
   color: #fff;
 }
+button.change:hover,div.data-dashbord button.see:hover,#ccc:hover{
+color: #f55800;
+background-color: #FFF5E1;
+}
+div.data-dashbord:hover button.see{
+  display: block;
+}
+
 div.data-dashbord {
   background-image: url(images/availiability.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 43.5rem;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.data-dashbord button.see {
+  display: none;
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
 }
 div.data-dashbord h4 {
   font-family: "Crete Round", serif;
@@ -259,12 +281,6 @@ div.data-dashbord p {
   color: #ffffff;
   margin: 1.6rem 2.4rem;
 }
-div.data-dashbord {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
 div.data-dashbord div.button button {
   background: rgba(255, 255, 255, 0.24);
   padding: 1rem 1.2rem;
@@ -283,6 +299,7 @@ div.data-dashbord div.button button.html {
 }
 
 .container-projects-grid {
+  margin-top: 2.4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
@@ -292,6 +309,9 @@ div.data-dashbord div.button button.html {
 
 /* About Me Section Starts */
 
+img[src="images/Frame.png"] {
+  display: none;
+}
 section.about-me {
   padding-left: 14rem;
   padding-top: 13rem;
@@ -329,6 +349,7 @@ section.about-me div.about-me button {
   font-weight: 700;
   font-size: 1.7rem;
   line-height: 2.4rem;
+  color: #fff;
 }
 section.about-me div.container img {
   width: 40%;
@@ -386,10 +407,6 @@ div.container-footer {
   align-items: baseline;
   flex-wrap: wrap;
 }
-/* footer p{
-  width: 45rem;
-  height: 25rem;
-} */
 footer p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -428,6 +445,12 @@ footer textarea {
 input[type="email"] {
   width: 40rem;
 }
+input[placeholder="Full name"] {
+  display: none;
+}
+.container-footer > p {
+  width: 30%;
+}
 footer button {
   background: #f55800;
   color: #ffffff;
@@ -449,18 +472,21 @@ footer hr {
 footer ul li i {
   color: #505f79;
   font-size: 3rem;
+  margin-left: 2rem;
 }
 footer ul {
   width: 20%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 4rem;
 }
 footer ul li {
   display: inline;
-  margin-left: 2rem;
 }
-
+hr#last {
+  display: none;
+}
 /* Media Query */
 
 /* For Tablets And Ipads */
@@ -471,33 +497,18 @@ footer ul li {
 }
 
 /* For Smarth phones */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 280px) and (max-width: 768px) {
   html {
     font-size: 50%;
   }
-  div.mobile-icons {
+  #burger-menu {
     display: block;
   }
-  #mobile {
-    width: 80px;
-    height: 180px;
-    display: inline;
-    position: absolute;
-    right: 0.03rem;
-    top: 44rem;
+  main div.desktop-icons {
+    display: none;
   }
-  div.mobile-icons ul li {
-    list-style-type: none;
-    font-size: 2rem;
-    display: inline-block;
-    margin-left: 2rem;
-  }
-
-  div.mobile-icons ul li a {
-    color: #cfcfcf;
-  }
-  .mobile-icons img {
-    display: block;
+  nav.menu {
+    display: none;
   }
   main {
     background-color: #1c1a19;
@@ -507,17 +518,42 @@ footer ul li {
     justify-content: space-between;
     align-items: center;
   }
-  div.data-dashbord {
-    height: 38.6rem;
+  div.MainParagraph {
+    margin-left: -7rem;
+    margin-top: 11rem;
   }
   div.MainParagraph h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
   }
-  div.image img {
-    display: none;
+  #mobile {
+    width: 8rem;
+    height: 18rem;
+    display: inline;
+    position: absolute;
+    right: 0.03rem;
+    top: 56rem;
   }
-  nav.menu {
-    display: none;
+  div.mobile-icons ul li {
+    list-style-type: none;
+    font-size: 4rem;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  div.mobile-icons ul {
+    margin-left: -11rem;
+  }
+  div.mobile-icons ul li a {
+    color: #cfcfcf;
+  }
+  .mobile-icons img {
+    display: block;
+  }
+  div.mobile-icons {
+    display: block;
+  }
+  #projects-section {
+    margin-left: 0;
+    margin-right: 0;
   }
   .project-first,
   .project-second {
@@ -526,10 +562,94 @@ footer ul li {
   #projects-section {
     margin-left: 0;
   }
-  main div.desktop-icons {
+  div.data-dashbord {
+    height: auto;
+  }
+  div.data-dashbord{
+    height: 38.6rem;
+  }
+  .data-dashbord button.see {
+    display: block;
+  }
+ 
+  section.about-me hr {
+    width: 90%;
+    margin-right: 0;
+  }
+  section.about-me {
+    padding-left: 2.4rem;
+  }
+  section.about-me div.about-me p:first-child {
+    font-size: 6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  div.details button {
+    display: block;
+    margin: 0 auto;
+  }
+  div.skills {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto, minmax(100px, 1fr));
+  }
+  div.skills ul li {
+    margin: 0 auto;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  div.skills ul > li:first-child {
+    margin-left: -3rem;
+  }
+  .container-footer > p {
+    width: 100%;
+    text-align: center;
+    line-height: 3.7rem;
+    margin-top: -5rem;
+    font-size: 3.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    min-width: 250px;
+  }
+
+  input[placeholder="First Name"],
+  input[placeholder="Last Name"] {
     display: none;
   }
-  #burger-menu {
+  input[placeholder="Full name"] {
+    display: inline;
+    width: 40rem;
+  }
+
+  footer {
+    padding: 0;
+  }
+  footer .container-footer,
+  footer ul {
+    padding-left: 14rem;
+    padding-right: 14.2rem;
+  }
+  footer .container-footer {
+    padding-top: 13rem;
+  }
+  hr#last {
     display: block;
+    width: 15rem;
+    color: #0d151e;
+    margin: 2rem auto;
+    border: 2px solid #0d151e;
+    border-radius: 2px;
+  }
+  img[src="images/f.png"] {
+    display: none;
+  }
+  img[src="images/Frame.png"] {
+    display: inline-block;
+    margin-top: 55rem;
+  }
+
+  div.image img {
+    display: none;
   }
 }
