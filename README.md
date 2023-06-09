@@ -119,19 +119,15 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project: As this is open source project you can help with building that.
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-
 I would like to thank for checking the project source code and your suggestion and feedback
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
