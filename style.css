@@ -1,0 +1,746 @@
+/* crete Rounded Font */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+
+/* Inter Font */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3e3c3c;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Licorice", cursive;
+  color: #fff;
+}
+
+header nav ul li a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  flex-basis: 30%;
+}
+
+footer ul {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.burger-menu {
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Header Section Ends */
+
+/* Hero Section Starts */
+
+main {
+  background-color: #1c1a19;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li {
+  display: inline;
+}
+
+div.desktop-icons ul li {
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 3.6rem;
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+footer ul li i {
+  color: #505f79;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+.desktop-icons ul li a i {
+  color: #cfcfcf;
+}
+
+footer p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: #262626;
+}
+
+.container-footer > p {
+  width: 30%;
+}
+
+.MainParagraph p,
+.MainParagraph h1 {
+  margin-bottom: 2.4rem;
+  margin-left: 10.2rem;
+}
+
+div.data-dashbord p {
+  overflow-x: auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin: 1.6rem 2.4rem;
+}
+
+.MainParagraph p:first-of-type {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.MainParagraph p:last-child {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #f4f5f7;
+}
+
+div.mobile-icons {
+  display: none;
+}
+
+#mobile {
+  display: none;
+}
+
+div.image {
+  align-self: flex-start;
+}
+
+div.image img {
+  height: 70vh;
+  width: auto;
+}
+
+/* Hero Section Ends */
+
+/* projects section Starts */
+.project-first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.project-second {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+div.skills ul li img {
+  margin-right: 1.2rem;
+}
+
+section.about-me div.container div.first-image {
+  width: 100%;
+  height: 40.3rem;
+  background-image: url(images/f.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section#projects-section img {
+  width: 37.5rem;
+  min-height: 35.5rem;
+}
+
+section.about-me hr {
+  margin-right: 14.2rem;
+  margin-top: 13.9rem;
+  margin-bottom: 14.6rem;
+  color: fff;
+}
+
+#projects-section hr {
+  color: #212121;
+  height: 0;
+  width: 40rem;
+}
+
+#projects-section {
+  margin-left: 0;
+  margin-bottom: 13rem;
+  padding-top: 13rem;
+  margin-right: 0;
+  background-color: #fff;
+}
+
+div.multi-post-story > p:first-of-type {
+  color: #091e42;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+
+div.about-me > h4:first-child {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 8.2rem;
+  color: #f55800;
+}
+
+div.about-me > h4:first-child + p {
+  font-family: "Inter", sans-serif;
+  margin-top: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #f4f5f7;
+}
+
+#projects-section div.project-first h4 {
+  font-weight: 400;
+  font-size: 4rem;
+  font-family: "Crete Round", serif;
+}
+
+div.multi-post-story {
+  width: 37.5rem;
+}
+
+div.multi-post-story #second {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #091e42;
+  font-family: "Inter", sans-serif;
+}
+
+div.multi-post-story div.buttons {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #091e42;
+  padding: 2.4rem 0;
+  margin-right: 0;
+}
+
+div.multi-post-story div.buttons button.css {
+  width: 55px;
+  height: 40px;
+}
+
+div.multi-post-story div.buttons button.html {
+  width: 67px;
+  height: 40px;
+}
+
+div.multi-post-story div.buttons button.bootstrap {
+  width: 95px;
+  height: 40px;
+}
+
+div.multi-post-story div.buttons button.ruby {
+  width: 61px;
+  height: 40px;
+}
+
+div.multi-post-story > :last-child {
+  color: #fff;
+  width: 12.4rem;
+  height: 4.8rem;
+  border: none;
+  background: #f55800;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+div.see {
+  width: 32.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/professional.png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 43.5rem;
+}
+
+footer button {
+  background: #f55800;
+  color: #fff;
+  padding: 1.2rem;
+  width: 12.2rem;
+  height: 4.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  border: none;
+}
+
+div.see button {
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.data-dashbord button.see {
+  display: none;
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+div.data-dashbord:hover button.see {
+  display: block;
+}
+
+button.change:hover,
+div.data-dashbord button.see:hover,
+div.data-dash #ccc:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+div.data-dashbord {
+  /*
+  *i did not give it margin auto*
+  width: 100%;
+ */
+
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/availiability.png);
+  width: 32.7rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+div.skills ul li {
+  list-style-type: none;
+  margin: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 4.3rem;
+  color: #fff;
+}
+
+div.data-dashbord ul.button li {
+  list-style-type: none;
+  display: inline;
+}
+
+section.about-me div.about-me button {
+  width: 15.6rem;
+  height: 4.8rem;
+  background: #f55800;
+  border: none;
+  margin-top: 2.4rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+div.data-dashbord ul.button li button {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 1rem 1.2rem;
+  border: none;
+  margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+div.data-dashbord div.button button.html {
+  margin-left: 2.6rem;
+}
+
+.container-projects-grid {
+  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 2.4rem;
+}
+
+/* project Section Ends */
+
+/* About Me Section Starts */
+
+section.about-me {
+  padding-left: 14rem;
+  padding-top: 13rem;
+  background: #262626;
+}
+
+section.about-me div.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+div.skills ul li:first-child {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #fff;
+  margin-bottom: 4.4rem;
+}
+
+/* About Me Section Ends */
+
+/* Footer Starts */
+
+footer {
+  padding-left: 14rem;
+  padding-top: 13rem;
+  padding-right: 14.2rem;
+}
+
+div.container-footer {
+  margin-bottom: 16rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+footer input {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2.4rem;
+  border-bottom: solid 1px #dbd8d7;
+  width: 19rem;
+}
+
+footer textarea {
+  color: #3c3a39;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  background: #fbf8f7;
+  border: none;
+  width: 40rem;
+  height: 11rem;
+  margin-bottom: 2.4rem;
+}
+
+input[type="email"] {
+  width: 40rem;
+}
+
+input[placeholder="Full name"] {
+  display: none;
+}
+
+hr#last {
+  display: none;
+}
+
+/* Media Query */
+
+/* For Tablets And Ipads */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* For Smarth phones */
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  #burger-menu {
+    display: block;
+  }
+
+  main div.desktop-icons {
+    display: none;
+  }
+
+  nav.menu {
+    display: none;
+  }
+
+  main {
+    background-color: #1c1a19;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main div.MainParagraph h1 {
+    font-family: "Crete Round", serif;
+    font-size: 7.2rem;
+    color: #f55800;
+  }
+
+  div.MainParagraph {
+    margin-left: -7rem;
+    margin-top: 11rem;
+  }
+
+  #mobile {
+    width: 8rem;
+    height: 18rem;
+    display: inline;
+    position: absolute;
+    right: 0.03rem;
+    top: 56rem;
+  }
+
+  footer .container-footer,
+  footer ul {
+    padding-left: 14rem;
+    padding-right: 14.2rem;
+  }
+
+  div.mobile-icons ul li {
+    list-style-type: none;
+    font-size: 4rem;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  div.mobile-icons ul {
+    margin-left: -11rem;
+  }
+
+  div.mobile-icons ul li a {
+    color: #cfcfcf;
+  }
+
+  .mobile-icons img {
+    display: block;
+  }
+
+  div.mobile-icons {
+    display: block;
+  }
+
+  .project-first,
+  .project-second {
+    margin-left: 10%;
+  }
+
+  div.data-dashbord {
+    height: 38.6rem;
+  }
+
+  section.about-me div.container div.first-image {
+    width: 100%;
+    height: 40.3rem;
+    background-image: url(images/Frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+  }
+
+  .data-dashbord button.see {
+    display: block;
+  }
+
+  footer hr {
+    background: #dfe1e6;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  section.about-me hr {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  section.about-me {
+    padding-left: 2.4rem;
+  }
+
+  .container-footer > p {
+    width: 100%;
+    text-align: center;
+    line-height: 3.7rem;
+    margin-top: -5rem;
+    font-size: 3.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    min-width: 250px;
+  }
+
+  div.data-dashbord h4 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: #fff;
+    margin-left: 2.4rem;
+  }
+
+  section.about-me div.about-me h4:first-child {
+    font-size: 6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  div.details button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  div.skills {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto, minmax(100px, 1fr));
+  }
+
+  div.skills ul li {
+    margin: 0 auto;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  div.skills ul > li:first-child {
+    margin-left: -3rem;
+  }
+
+  input[placeholder="First Name"],
+  input[placeholder="Last Name"] {
+    display: none;
+  }
+
+  input[placeholder="Full name"] {
+    display: inline;
+    width: 40rem;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer .container-footer {
+    padding-top: 13rem;
+  }
+
+  hr#last {
+    display: block;
+    width: 15rem;
+    color: #0d151e;
+    margin: 2rem auto;
+    border: 2px solid #0d151e;
+    border-radius: 2px;
+  }
+
+  div.image img {
+    display: none;
+  }
+}
