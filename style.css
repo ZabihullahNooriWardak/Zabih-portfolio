@@ -63,7 +63,7 @@ nav ul li {
   display: inline;
 }
 
-#burger-menu {
+.burger-menu {
   display: none;
   color: #fff;
   font-size: 2rem;
@@ -190,9 +190,12 @@ div.skills ul li img {
   margin-right: 1.2rem;
 }
 
-section.about-me div.container img {
-  width: 40%;
-  height: auto;
+section.about-me div.container div.first-image {
+  width: 100%;
+  height: 40.3rem;
+  background-image: url(images/f.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 section#projects-section img {
@@ -230,7 +233,7 @@ div.multi-post-story > p:first-of-type {
   line-height: 5.2rem;
 }
 
-div.about-me > p:first-child {
+div.about-me > h4:first-child {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -239,7 +242,7 @@ div.about-me > p:first-child {
   color: #f55800;
 }
 
-div.about-me > p:first-child + p {
+div.about-me > h4:first-child + p {
   font-family: "Inter", sans-serif;
   margin-top: 2.4rem;
   font-style: normal;
@@ -249,7 +252,7 @@ div.about-me > p:first-child + p {
   color: #f4f5f7;
 }
 
-#projects-section div.project-first p {
+#projects-section div.project-first h4 {
   font-weight: 400;
   font-size: 4rem;
   font-family: "Crete Round", serif;
@@ -312,7 +315,9 @@ div.multi-post-story > :last-child {
 }
 
 div.see {
-  width: 100%;
+  width: 32.7rem;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(images/professional.png);
   position: relative;
   background-size: cover;
@@ -375,8 +380,15 @@ div.data-dash #ccc:hover {
 }
 
 div.data-dashbord {
-  background-image: url(images/availiability.png);
+  /* 
+  *i did not give it margin auto*
   width: 100%;
+ */
+
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/availiability.png);
+  width: 32.7rem;
   background-size: cover;
   background-repeat: no-repeat;
   height: 43rem;
@@ -395,8 +407,11 @@ div.data-dashbord h4 {
   color: #fff;
   margin-left: 2.4rem;
 }
-
-div.data-dashbord div.button button {
+div.data-dashbord ul.button li {
+  list-style-type: none;
+  display: inline;
+}
+div.data-dashbord ul.button li button {
   background: rgba(255, 255, 255, 0.24);
   padding: 1rem 1.2rem;
   border: none;
@@ -425,10 +440,6 @@ div.data-dashbord div.button button.html {
 /* project Section Ends */
 
 /* About Me Section Starts */
-
-img[src="images/Frame.png"] {
-  display: none;
-}
 
 section.about-me {
   padding-left: 14rem;
@@ -634,7 +645,14 @@ hr#last {
   div.data-dashbord {
     height: 38.6rem;
   }
-
+  section.about-me div.container div.first-image {
+    width: 100%;
+    height: 40.3rem;
+    background-image: url(images/Frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+  }
   .data-dashbord button.see {
     display: block;
   }
@@ -665,7 +683,7 @@ hr#last {
     min-width: 250px;
   }
 
-  section.about-me div.about-me p:first-child {
+  section.about-me div.about-me h4:first-child {
     font-size: 6rem;
     margin-bottom: 2.4rem;
   }
@@ -716,15 +734,6 @@ hr#last {
     margin: 2rem auto;
     border: 2px solid #0d151e;
     border-radius: 2px;
-  }
-
-  img[src="images/f.png"] {
-    display: none;
-  }
-
-  img[src="images/Frame.png"] {
-    display: inline-block;
-    margin-top: 55rem;
   }
 
   div.image img {
