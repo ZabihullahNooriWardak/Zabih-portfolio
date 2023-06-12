@@ -172,20 +172,18 @@ div.image img {
 
 /* projects section Starts */
 .project-first {
-  margin-left: 4rem;
   display: flex;
   flex-wrap: wrap;
   column-gap: 2rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .project-second {
-  margin-left: 4rem;
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: space-around;
   column-gap: 2rem;
   align-items: center;
