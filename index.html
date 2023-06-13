@@ -271,16 +271,18 @@
           <input type="text" placeholder="First Name" />
           <input type="text" placeholder="Last Name" /><br />
           <input type="text" required maxlength="30" placeholder="Full name" />
-          <input type="email" placeholder="Email Address" /><br />
+          <input type="email" placeholder="Email Address" required/><br />
           <textarea
             name=""
             id=""
             cols="30"
             rows="10"
             placeholder="Write me something..."
+            maxlength="500"
+            required
           ></textarea
           ><br />
-          <button class="change">Get in touch</button>
+          <button class="change" type="submit">Get in touch</button>
         </div>
       </form>
       </div>
