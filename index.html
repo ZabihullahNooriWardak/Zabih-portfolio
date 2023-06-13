@@ -118,9 +118,7 @@
     <section id="projects-section">
       <div class="project-first">
         <h4>My Recent Works</h4>
-        <hr />
-      </div>
-      <div class="project-second">
+        <hr/>
         <img src="images/woman.png" alt="image not loaded" />
         <div class="multi-post-story">
           <p>Mult-Post Stories</p>
@@ -268,51 +266,57 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </p>
+      <form action="https://formspree.io/f/xqkovrda" method="post">
         <div class="details">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" /><br />
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Email Address" /><br />
-          <textarea
+          <input name="firstName" type="text" placeholder="First Name" />
+          <input  type="text" placeholder="Last Name" /><br />
+          <input  name="FullName" type="text" required maxlength="30" placeholder="Full name" />
+          <input  name='email' type="email" placeholder="Email Address" required/><br />
+          <textarea name="message"
             name=""
             id=""
             cols="30"
             rows="10"
             placeholder="Write me something..."
+            maxlength="500"
+            required
           ></textarea
           ><br />
-          <button class="change">Get in touch</button>
+          <button class="change" type="submit">Get in touch</button>
         </div>
+      </form>
       </div>
-      <hr />
-      <ul>
-        <li>
-          <a href="https://github.com/ZabihullahNooriWardak"
-            ><i class="bx bxl-github"> </i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/zabi-noori-aa59a924a/"
-            ><i class="bx bxl-linkedin"> </i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100030667175644"
-            ><i class="fa-regular fa-hand-peace"> </i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/ZabiNoo31954752"
-            ><i class="bx bxl-twitter"> </i
-          ></a>
-        </li>
-        <li>
-          <a href="mailto:zabinoori712@gmail.com"
-            ><i class="bx bxl-gmail"></i
-          ></a>
-        </li>
-      </ul>
-      <hr id="last" />
     </footer>
+   <div class="behind-footer">
+    <hr />
+    <ul>
+      <li>
+        <a href="https://github.com/ZabihullahNooriWardak"
+          ><i class="bx bxl-github"> </i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/zabi-noori-aa59a924a/"
+          ><i class="bx bxl-linkedin"> </i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=100030667175644"
+          ><i class="fa-regular fa-hand-peace"> </i
+        ></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/ZabiNoo31954752"
+          ><i class="bx bxl-twitter"> </i
+        ></a>
+      </li>
+      <li>
+        <a href="mailto:zabinoori712@gmail.com"
+          ><i class="bx bxl-gmail"></i
+        ></a>
+      </li>
+    </ul>
+    <hr id="last" />
+   </div>
   </body>
 </html>
