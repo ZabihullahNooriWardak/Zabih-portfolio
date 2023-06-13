@@ -344,11 +344,6 @@ div.multi-post-story > :last-child {
 
 div.see {
   width: 90%;
-
-  /* margin-left: auto; */
-
-  /* margin-right: auto; */
-
   background-image: url(images/professional.png);
   position: relative;
   background-size: cover;
@@ -411,15 +406,6 @@ div.data-dash #ccc:hover {
 }
 
 div.data-dashbord {
-  /*
-  *i did not give it margin auto*
-  width: 100%;
- */
-
-  /* margin-left: auto; */
-
-  /* margin-right: auto; */
-
   background-image: url(images/availiability.png);
   width: 90%;
   background-size: cover;
@@ -485,13 +471,7 @@ div.data-dashbord div.button button.html {
   display: grid;
   margin-top: 2.4rem;
   grid-template-columns: repeat(auto-fit, minmax(340px, 369px));
-
-  /* grid-template-rows: auto; */
   row-gap: 1rem;
-
-  /* justify-content: center; */
-
-  /* align-content: center; */
   justify-items: start;
   justify-content: center;
 }
