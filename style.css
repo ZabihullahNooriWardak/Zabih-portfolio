@@ -45,7 +45,7 @@ header nav ul li a {
   flex-basis: 30%;
 }
 
-footer ul {
+.behind-footer ul {
   width: 20%;
   margin: auto;
   display: flex;
@@ -81,7 +81,7 @@ main {
   align-items: center;
 }
 
-footer ul li {
+.behind-footer ul li {
   display: inline;
 }
 
@@ -93,7 +93,7 @@ div.desktop-icons ul li {
   font-size: 2rem;
 }
 
-footer ul li i {
+.behind-footer ul li i {
   color: #505f79;
   font-size: 3rem;
   margin-left: 2rem;
@@ -123,6 +123,11 @@ footer p {
 
 .container-footer > p {
   width: 30%;
+}
+
+.project-first h4,
+.project-first p {
+  margin-bottom: 4rem;
 }
 
 div.data-dashbord p {
@@ -163,6 +168,12 @@ div.image {
   align-self: flex-start;
 }
 
+.project-first img {
+  height: 44.8rem;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
 div.image img {
   height: 70vh;
   width: auto;
@@ -172,23 +183,33 @@ div.image img {
 
 /* projects section Starts */
 .project-first {
-  margin-left: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 2rem;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 40rem 20rem auto;
+  grid-template-rows: auto;
+  justify-content: start;
+  width: 90%;
+  margin: auto;
 }
 
-.project-second {
-  margin-left: 4rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-around;
-  column-gap: 2rem;
-  align-items: center;
+.project-first h4 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.behind-footer hr {
+  background: #dfe1e6;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.project-first hr {
+  width: 100%;
+  grid-column: 2/4;
+}
+
+.project-first div {
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
 
 div.skills ul li img {
@@ -216,9 +237,11 @@ section.about-me hr {
 }
 
 #projects-section hr {
+  margin-bottom: 8rem;
+  margin-top: 3rem;
   color: #212121;
-  height: 0;
-  width: 40rem;
+  height: 0.00007rem;
+  width: auto;
 }
 
 #projects-section {
@@ -320,9 +343,12 @@ div.multi-post-story > :last-child {
 }
 
 div.see {
-  width: 32.7rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
+
+  /* margin-left: auto; */
+
+  /* margin-right: auto; */
+
   background-image: url(images/professional.png);
   position: relative;
   background-size: cover;
@@ -390,10 +416,12 @@ div.data-dashbord {
   width: 100%;
  */
 
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+
+  /* margin-right: auto; */
+
   background-image: url(images/availiability.png);
-  width: 32.7rem;
+  width: 90%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 43rem;
@@ -452,11 +480,20 @@ div.data-dashbord div.button button.html {
 }
 
 .container-projects-grid {
-  margin-top: 2.4rem;
+  width: 90%;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
-  grid-template-rows: auto;
-  gap: 2.4rem;
+  margin-top: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 369px));
+
+  /* grid-template-rows: auto; */
+  row-gap: 1rem;
+
+  /* justify-content: center; */
+
+  /* align-content: center; */
+  justify-items: start;
+  justify-content: center;
 }
 
 /* project Section Ends */
@@ -559,9 +596,40 @@ hr#last {
 }
 
 /* For Smarth phones */
-@media screen and (min-width: 280px) and (max-width: 768px) {
+@media screen and (min-width: 270px) and (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+
+  .project-first {
+    display: grid;
+    width: auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 50px 60px 370px 350px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .project-first h4 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .project-first hr {
+    padding-bottom: 0;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .project-first img {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .project-first div {
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 
   i.burger-menu {
@@ -612,7 +680,7 @@ hr#last {
   }
 
   footer .container-footer,
-  footer ul {
+  .behind-footer ul {
     padding-left: 14rem;
     padding-right: 14.2rem;
   }
@@ -640,11 +708,6 @@ hr#last {
     display: block;
   }
 
-  .project-first,
-  .project-second {
-    margin-left: 10%;
-  }
-
   div.data-dashbord {
     height: 38.6rem;
   }
@@ -660,12 +723,6 @@ hr#last {
 
   .data-dashbord button.see {
     display: block;
-  }
-
-  footer hr {
-    background: #dfe1e6;
-    width: 100%;
-    margin-bottom: 2.5rem;
   }
 
   section.about-me hr {
