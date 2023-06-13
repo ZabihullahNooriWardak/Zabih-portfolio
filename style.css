@@ -413,8 +413,9 @@ div.skills ul li {
 }
 
 div.data-dashbord ul.button li {
-  list-style-type: none;
-  display: inline;
+  /* list-style-type: none;
+  display: inline; */
+  float: left;
 }
 
 section.about-me div.about-me button {
