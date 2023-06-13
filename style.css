@@ -343,7 +343,7 @@ div.multi-post-story > :last-child {
 }
 
 div.see {
-  width: 90%;
+  width: 95%;
   background-image: url(images/professional.png);
   position: relative;
   background-size: cover;
@@ -407,7 +407,7 @@ div.data-dash #ccc:hover {
 
 div.data-dashbord {
   background-image: url(images/availiability.png);
-  width: 90%;
+  width: 95%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 43rem;
@@ -466,7 +466,7 @@ div.data-dashbord div.button button.html {
 }
 
 .container-projects-grid {
-  width: 90%;
+  width: auto;
   margin: auto;
   display: grid;
   margin-top: 2.4rem;
@@ -570,7 +570,7 @@ hr#last {
 /* Media Query */
 
 /* For Smarth phones */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 50%;
   }
@@ -684,6 +684,7 @@ hr#last {
 
   div.data-dashbord {
     height: 38.6rem;
+    width: auto;
   }
 
   section.about-me div.container div.first-image {
@@ -739,9 +740,9 @@ hr#last {
   }
 
   div.skills {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto, minmax(100px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   div.skills ul li {
