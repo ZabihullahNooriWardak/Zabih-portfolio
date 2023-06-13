@@ -122,7 +122,7 @@ footer p {
 }
 
 .container-footer > p {
-  width: 30%;
+  width: 50%;
 }
 
 .project-first h4,
@@ -524,6 +524,7 @@ div.container-footer {
   justify-content: space-around;
   align-items: baseline;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 footer input {
@@ -568,15 +569,8 @@ hr#last {
 
 /* Media Query */
 
-/* For Tablets And Ipads */
-@media screen and (max-width: 992px) {
-  html {
-    font-size: 55%;
-  }
-}
-
 /* For Smarth phones */
-@media screen and (min-width: 270px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   html {
     font-size: 50%;
   }
@@ -722,7 +716,6 @@ hr#last {
     font-size: 3.2rem;
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    min-width: 250px;
   }
 
   div.data-dashbord h4 {
