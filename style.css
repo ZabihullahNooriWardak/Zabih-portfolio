@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 header {
@@ -64,7 +64,7 @@ nav ul li {
 }
 
 i.burger-menu {
-  display: none;
+  display: block;
   color: #fff;
   font-size: 2rem;
 }
@@ -77,7 +77,8 @@ main {
   background-color: #1c1a19;
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -90,7 +91,7 @@ div.desktop-icons ul li {
   margin-right: 2rem;
   margin-left: 3.6rem;
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .behind-footer ul li i {
@@ -104,8 +105,9 @@ div.desktop-icons ul li {
 }
 
 div.MainParagraph h1 {
+  margin-top: 13rem;
   color: #f55800;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 7.2rem;
@@ -125,8 +127,8 @@ footer p {
   width: 50%;
 }
 
-.project-first h4,
-.project-first p {
+section.projects-section h4,
+.section.projects-section p {
   margin-bottom: 4rem;
 }
 
@@ -156,22 +158,8 @@ div.data-dashbord p {
   color: #f4f5f7;
 }
 
-div.mobile-icons {
-  display: none;
-}
-
-#mobile {
-  display: none;
-}
-
 div.image {
   align-self: flex-start;
-}
-
-.project-first img {
-  height: 44.8rem;
-  grid-column: 1/3;
-  grid-row: 2/3;
 }
 
 div.image img {
@@ -182,34 +170,11 @@ div.image img {
 /* Hero Section Ends */
 
 /* projects section Starts */
-.project-first {
-  display: grid;
-  grid-template-columns: 40rem 20rem auto;
-  grid-template-rows: auto;
-  justify-content: start;
-  width: 90%;
-  margin: auto;
-}
-
-.project-first h4 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
 
 .behind-footer hr {
   background: #dfe1e6;
   width: 100%;
   margin-bottom: 2.5rem;
-}
-
-.project-first hr {
-  width: 100%;
-  grid-column: 2/4;
-}
-
-.project-first div {
-  grid-column: 2/4;
-  grid-row: 2/3;
 }
 
 div.skills ul li img {
@@ -224,9 +189,11 @@ section.about-me div.container div.first-image {
   background-size: contain;
 }
 
-section#projects-section img {
+section.projects-section img {
   width: 37.5rem;
   min-height: 35.5rem;
+  margin-bottom: 2rem;
+margin-left: -6rem;
 }
 
 section.about-me hr {
@@ -236,20 +203,12 @@ section.about-me hr {
   color: fff;
 }
 
-#projects-section hr {
+.projects-section hr {
   margin-bottom: 8rem;
   margin-top: 3rem;
-  color: #212121;
+  background-color: #212121;
   height: 0.00007rem;
-  width: auto;
-}
-
-#projects-section {
-  margin-left: 0;
-  margin-bottom: 13rem;
-  padding-top: 13rem;
-  margin-right: 0;
-  background-color: #fff;
+  width: 60%;
 }
 
 div.multi-post-story > p:first-of-type {
@@ -280,7 +239,7 @@ div.about-me > h4:first-child + p {
   color: #f4f5f7;
 }
 
-#projects-section div.project-first h4 {
+.projects-section h4 {
   font-weight: 400;
   font-size: 4rem;
   font-family: "Crete Round", serif;
@@ -288,6 +247,7 @@ div.about-me > h4:first-child + p {
 
 div.multi-post-story {
   width: 37.5rem;
+  margin-left: -rem;
 }
 
 div.multi-post-story #second {
@@ -328,6 +288,20 @@ div.multi-post-story div.buttons button.ruby {
   width: 61px;
   height: 40px;
 }
+div.see button {
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
 
 div.multi-post-story > :last-child {
   color: #fff;
@@ -343,12 +317,13 @@ div.multi-post-story > :last-child {
 }
 
 div.see {
-  width: 95%;
+  width: 36.9rem;
   background-image: url(images/professional.png);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   height: 43.5rem;
+  margin-bottom: 2rem;
 }
 
 footer button {
@@ -380,8 +355,7 @@ div.see button {
   color: #fff;
 }
 
-.data-dashbord button.see {
-  display: none;
+button.see {
   width: 100%;
   height: 5.8rem;
   background-color: #f55800;
@@ -392,6 +366,24 @@ div.see button {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+}
+
+.data-dashbord button.see {
+  width: 100%;
+  display: none;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.data-dashbord button.see {
+  display: block;
 }
 
 div.data-dashbord:hover button.see {
@@ -415,6 +407,7 @@ div.data-dashbord {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  margin-bottom: 2rem;
 }
 
 div.skills ul li {
@@ -447,6 +440,14 @@ section.about-me div.about-me button {
   color: #fff;
 }
 
+section.projects-section {
+  margin-top: 13.5rem;
+  margin-bottom: 13.1rem;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+
 div.data-dashbord ul.button li button {
   background: rgba(255, 255, 255, 0.24);
   padding: 1rem 1.2rem;
@@ -463,17 +464,6 @@ div.data-dashbord ul.button li button {
 
 div.data-dashbord div.button button.html {
   margin-left: 2.6rem;
-}
-
-.container-projects-grid {
-  width: auto;
-  margin: auto;
-  display: grid;
-  margin-top: 2.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 369px));
-  row-gap: 1rem;
-  justify-items: start;
-  justify-content: center;
 }
 
 /* project Section Ends */
@@ -567,90 +557,104 @@ hr#last {
   display: none;
 }
 
+nav.menu {
+  display: none;
+}
+
+main div.desktop-icons {
+  display: none;
+}
+div.mobile-icons ul li {
+  list-style-type: none;
+  font-size: 4rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+div.mobile-icons ul {
+  margin-left: -11rem;
+}
+
+div.mobile-icons ul li a {
+  color: #cfcfcf;
+}
+
+.mobile-icons img {
+  display: inline;
+}
+
+div.mobile-icons {
+  display: block;
+}
+
+div.image img {
+  display: none;
+}
+#mobile {
+  width: 8rem;
+  height: 18rem;
+  display: inline;
+  position: absolute;
+  right: 0.03rem;
+  top: 56rem;
+}
+
+.MainParagraph h1,
+.MainParagraph p {
+  margin-bottom: 2.4rem;
+  margin-left: 10.2rem;
+}
+div.MainParagraph {
+  margin-left: -7rem;
+}
 /* Media Query */
 
 /* For Smarth phones */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 62.5%;
+  }
+  section.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .project-first {
-    display: grid;
-    width: auto;
-    grid-template-columns: 300px;
-    grid-template-rows: 50px 60px 370px 350px;
-    justify-content: center;
-    margin: auto;
+  section.projects-section img {
+    width: 68.4rem;
+    min-height: 35.5rem;
   }
 
-  .project-first h4 {
-    grid-column: 1/-1;
-    grid-row: 1/2;
-  }
-
-  .project-first hr {
-    padding-bottom: 0;
-    width: 100%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .project-first img {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .project-first div {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-
-  i.burger-menu {
+  div.data-dashbord:hover button.see {
     display: block;
   }
-
-  main div.desktop-icons {
-    display: none;
-  }
-
-  nav.menu {
-    display: none;
-  }
-
   main {
     background-color: #1c1a19;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
   }
 
-  .MainParagraph h1,
-  .MainParagraph p {
-    margin-bottom: 2.4rem;
-    margin-left: 10.2rem;
+  i.burger-menu {
+    display: none;
   }
 
-  main div.MainParagraph h1 {
-    font-family: "Crete Round", serif;
-    font-size: 7.2rem;
-    color: #f55800;
-  }
-
-  div.MainParagraph {
-    margin-left: -7rem;
-    margin-top: 11rem;
+  div.mobile-icons {
+    display: none;
   }
 
   #mobile {
-    width: 8rem;
-    height: 18rem;
+    display: none;
+  }
+
+  main div.desktop-icons {
     display: inline;
-    position: absolute;
-    right: 0.03rem;
-    top: 56rem;
+  }
+
+  nav.menu {
+    display: block;
   }
 
   footer .container-footer,
@@ -659,32 +663,9 @@ hr#last {
     padding-right: 14.2rem;
   }
 
-  div.mobile-icons ul li {
-    list-style-type: none;
-    font-size: 4rem;
-    display: inline-block;
-    margin-left: 2rem;
-  }
-
-  div.mobile-icons ul {
-    margin-left: -11rem;
-  }
-
-  div.mobile-icons ul li a {
-    color: #cfcfcf;
-  }
-
-  .mobile-icons img {
-    display: block;
-  }
-
-  div.mobile-icons {
-    display: block;
-  }
-
   div.data-dashbord {
-    height: 38.6rem;
-    width: auto;
+    height: 43.5rem;
+    width: 36.9rem;
   }
 
   section.about-me div.container div.first-image {
@@ -694,10 +675,6 @@ hr#last {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom right;
-  }
-
-  .data-dashbord button.see {
-    display: block;
   }
 
   section.about-me hr {
@@ -783,6 +760,10 @@ hr#last {
   }
 
   div.image img {
-    display: none;
+    display: inline;
+  }
+
+  div.MainParagraph h1 {
+    margin-top: 0;
   }
 }
