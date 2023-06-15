@@ -45,8 +45,6 @@ header nav ul li a {
   flex-basis: 30%;
 }
 
-
-
 .menu ul {
   display: flex;
   justify-content: space-around;
@@ -76,7 +74,6 @@ main {
   align-items: center;
 }
 
-
 div.desktop-icons ul li {
   margin-bottom: 1rem;
   margin-right: 2rem;
@@ -84,8 +81,6 @@ div.desktop-icons ul li {
   list-style-type: none;
   font-size: 3rem;
 }
-
-
 
 .desktop-icons ul li a i {
   color: #cfcfcf;
@@ -100,8 +95,6 @@ div.MainParagraph h1 {
   font-size: 7.2rem;
   line-height: 8.2rem;
 }
-
-
 
 section.projects-section h4,
 .section.projects-section p {
@@ -147,15 +140,13 @@ div.image img {
 
 /* projects section Starts */
 
-
-
 section.about-me div.container div.first-image {
   width: 100%;
   height: 40.3rem;
   background-image: url(images/Frame.png);
   background-repeat: no-repeat;
   background-size: contain;
-background-position: bottom;
+  background-position: bottom;
 }
 
 section.projects-section img {
@@ -294,8 +285,6 @@ div.see {
   margin-bottom: 2rem;
 }
 
-
-
 div.see button {
   width: 100%;
   height: 5.8rem;
@@ -324,9 +313,9 @@ button.see {
   color: #fff;
 }
 
-.data-dashbord button.see:hover{
-  background-color: #FFF5E1;
-  color: #F55800;
+.data-dashbord button.see:hover {
+  background-color: #fff5e1;
+  color: #f55800;
 }
 .data-dashbord button.see {
   width: 100%;
@@ -340,7 +329,6 @@ button.see {
   line-height: 24px;
   color: #fff;
 }
-
 
 div.data-dashbord:hover button.see {
   display: block;
@@ -359,15 +347,14 @@ div.data-dashbord {
   margin-bottom: 2rem;
 }
 
-
 div.data-dashbord ul.button li {
   list-style-type: none;
   display: inline;
 }
 
 section.about-me div.about-me button:hover {
-  color:#f55800; 
-  background-color: #FFF5E1;
+  color: #f55800;
+  background-color: #fff5e1;
 }
 section.about-me div.about-me button {
   width: 15.6rem;
@@ -427,10 +414,6 @@ section.about-me div.container {
 /* About Me Section Ends */
 
 /* Footer Starts */
-
-
-
-
 
 nav.menu {
   display: none;
@@ -508,7 +491,89 @@ div.skills ul li {
 div.skills ul img {
   margin-right: 1rem;
 }
-
+footer .hidden{
+  display: none;
+}
+footer textarea {
+  color: #3c3a39;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  background: #fbf8f7;
+  border: none;
+  width: 100%;
+  height: 11rem;
+  margin-bottom: 2.4rem;
+  padding: 1rem;
+}
+footer .container-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 6.9rem;
+  font-size: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.container-footer p{
+  width:32.7rem;
+  margin-top: 5rem;
+}
+footer input {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2.4rem;
+  border-bottom: solid 1px #dbd8d7;
+  width: 100%;
+}
+footer button {
+  background: #f55800;
+  color: #fff;
+  padding: 1.2rem;
+  width: 12.2rem;
+  height: 4.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  border: none;
+  margin-bottom:7.8rem;
+}
+.behind-footer hr {
+  background: #dfe1e6;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+.behind-footer ul li i {
+  color: #505f79;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+.behind-footer ul {
+  list-style-type: none;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+hr#last {
+  display: block;
+  width: 15rem;
+  color: #0d151e;
+  margin: 2rem auto;
+  border: 2px solid #0d151e;
+  border-radius: 2px;
+}
 /* Media Query */
 
 /* For Smarth phones */
@@ -516,18 +581,40 @@ div.skills ul img {
   html {
     font-size: 62.5%;
   }
-div.data-dashbord button.see{
-  display: none;
-}
+  .container-footer p,.container-footer .details {
+    width:40%;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .shown {
+    display:none;
+  }
+  footer .hidden {
+    display:inline;
+    width: 40%;
+  }
+  [placeholder='First Name']{
+    margin-right: 5rem;
+  }
+
+  hr#last{
+    display: none;
+  }
+  div.data-dashbord button.see {
+    display: none;
+  }
   button.change:hover,
-div.data-dashbord button.see:hover,
-div.data-dash #ccc:hover {
-  color: #f55800;
-  background-color: #fff5e1;
-}
+  div.data-dashbord button.see:hover,
+  div.data-dash #ccc:hover {
+    color: #f55800;
+    background-color: #fff5e1;
+  }
   div.skills {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: space-between;
   }
   section.projects-section {
@@ -576,8 +663,6 @@ div.data-dash #ccc:hover {
     display: block;
   }
 
-
-
   div.data-dashbord {
     height: 43.5rem;
     width: 36.9rem;
@@ -601,7 +686,6 @@ div.data-dash #ccc:hover {
     padding-left: 10rem;
   }
 
-
   div.data-dashbord h4 {
     font-family: "Crete Round", serif;
     font-style: normal;
@@ -617,8 +701,6 @@ div.data-dash #ccc:hover {
     margin-bottom: 2.4rem;
   }
 
-
- 
   div.image img {
     display: inline;
   }
