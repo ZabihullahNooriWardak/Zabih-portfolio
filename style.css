@@ -1,0 +1,708 @@
+/* crete Rounded Font */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+
+/* Inter Font */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50%;
+}
+
+header {
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3e3c3c;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Licorice", cursive;
+  color: #fff;
+}
+
+header nav ul li a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  flex-basis: 30%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+i.burger-menu {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Header Section Ends */
+
+/* Hero Section Starts */
+
+main {
+  background-color: #1c1a19;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.desktop-icons ul li {
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 3.6rem;
+  list-style-type: none;
+  font-size: 3rem;
+}
+
+.behind-footer ul li i {
+  color: #505f79;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+.desktop-icons ul li a i {
+  color: #cfcfcf;
+}
+
+.MainParagraph h1,
+.MainParagraph p {
+  margin-bottom: 2.4rem;
+  margin-left: 10.2rem;
+}
+
+div.MainParagraph h1 {
+  margin-top: 13rem;
+  color: #f55800;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 8.2rem;
+}
+
+.container-footer p {
+  width: 32.7rem;
+  margin-top: 5rem;
+}
+
+div.data-dashbord p {
+  overflow-x: auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin: 1.6rem 2.4rem;
+}
+
+.projects-section h4 {
+  font-weight: 400;
+  font-size: 4rem;
+  font-family: "Crete Round", serif;
+}
+
+section.projects-section h4,
+.section.projects-section p {
+  margin-bottom: 4rem;
+}
+
+.MainParagraph p:first-of-type {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.MainParagraph p:last-child {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #f4f5f7;
+}
+
+div.image {
+  align-self: flex-start;
+}
+
+.mobile-icons img {
+  display: inline;
+}
+
+div.image img {
+  height: 80vh;
+  width: 30vw;
+  display: none;
+}
+
+/* Hero Section Ends */
+
+/* projects section Starts */
+
+section.about-me div.container div.first-image {
+  width: 100%;
+  height: 40.3rem;
+  background-image: url(images/Frame.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+section.projects-section img {
+  width: 37.5rem;
+  min-height: 35.5rem;
+  margin-bottom: 2rem;
+}
+
+.projects-section hr {
+  margin-bottom: 8rem;
+  margin-top: 3rem;
+  background-color: #212121;
+  height: 0.00007rem;
+  width: 60%;
+}
+
+.behind-footer hr {
+  background: #dfe1e6;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+section.about-me hr {
+  margin-right: 3rem;
+  margin-top: 13.9rem;
+  margin-bottom: 14.6rem;
+  color: fff;
+}
+
+div.multi-post-story > p:first-of-type {
+  color: #091e42;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+
+div.about-me > h4:first-child {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 8.2rem;
+  color: #f55800;
+}
+
+div.about-me > h4:first-child + p {
+  font-family: "Inter", sans-serif;
+  margin-top: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #f4f5f7;
+}
+
+div.multi-post-story {
+  width: 37.5rem;
+  margin-left: -rem;
+}
+
+div.multi-post-story #second {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #091e42;
+  font-family: "Inter", sans-serif;
+}
+
+div.multi-post-story div.buttons {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #091e42;
+  padding: 2.4rem 0;
+  margin-right: 0;
+}
+
+div.multi-post-story div.buttons button.css {
+  width: 55px;
+  height: 40px;
+}
+
+div.multi-post-story div.buttons button.html {
+  width: 67px;
+  height: 40px;
+}
+
+div.multi-post-story div.buttons button.bootstrap {
+  width: 95px;
+  height: 40px;
+}
+
+div.multi-post-story div.buttons button.ruby {
+  width: 61px;
+  height: 40px;
+}
+
+footer button {
+  background: #f55800;
+  color: #fff;
+  padding: 1.2rem;
+  width: 12.2rem;
+  height: 4.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  border: none;
+  margin-bottom: 7.8rem;
+}
+
+div.see button {
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+div.multi-post-story > :last-child {
+  color: #fff;
+  width: 12.4rem;
+  height: 4.8rem;
+  border: none;
+  background: #f55800;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+div.see {
+  width: 36.9rem;
+  background-image: url(images/professional.png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 43.5rem;
+  margin-bottom: 2rem;
+}
+
+button.see {
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.data-dashbord button.see {
+  width: 100%;
+  height: 5.8rem;
+  background-color: #f55800;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.data-dashbord button.see:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+div.data-dashbord:hover button.see {
+  display: block;
+}
+
+div.data-dashbord {
+  background-image: url(images/availiability.png);
+  width: 95%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+div.mobile-icons ul li {
+  list-style-type: none;
+  font-size: 4rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+div.skills ul li {
+  margin: 2rem;
+}
+
+div.data-dashbord ul.button li {
+  list-style-type: none;
+  display: inline;
+}
+
+section.about-me div.about-me button {
+  width: 15.6rem;
+  height: 4.8rem;
+  background: #f55800;
+  border: none;
+  margin-top: 2.4rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+div.data-dashbord ul.button li button {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 1rem 1.2rem;
+  border: none;
+  margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+section.about-me div.about-me button:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+section.projects-section {
+  margin-top: 10.5rem;
+  margin-bottom: 13.1rem;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+
+div.data-dashbord div.button button.html {
+  margin-left: 2.6rem;
+}
+
+/* project Section Ends */
+
+/* About Me Section Starts */
+
+section.about-me {
+  padding-left: 2rem;
+  padding-top: 13rem;
+  background: #262626;
+}
+
+section.about-me div.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* About Me Section Ends */
+
+/* Footer Starts */
+
+nav.menu {
+  display: none;
+}
+
+main div.desktop-icons {
+  display: none;
+}
+
+.behind-footer ul {
+  list-style-type: none;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+div.mobile-icons ul {
+  margin-left: -11rem;
+}
+
+div.mobile-icons ul li a {
+  color: #cfcfcf;
+}
+
+div.mobile-icons {
+  display: block;
+}
+
+#mobile {
+  width: 8rem;
+  height: 18rem;
+  display: inline;
+  position: absolute;
+  right: 0.03rem;
+  top: 56rem;
+}
+
+div.MainParagraph {
+  margin-left: -7rem;
+}
+
+div.skills {
+  margin-left: -2.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.skills ul {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.3rem;
+  list-style-type: none;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 4.4rem;
+  text-align: center;
+}
+
+div.skills ul img {
+  margin-right: 1rem;
+}
+
+footer .hidden {
+  display: none;
+}
+
+footer textarea {
+  color: #3c3a39;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  background: #fbf8f7;
+  border: none;
+  width: 100%;
+  height: 11rem;
+  margin-bottom: 2.4rem;
+  padding: 1rem;
+}
+
+footer .container-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 6.9rem;
+  font-size: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+footer input {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2.4rem;
+  border-bottom: solid 1px #dbd8d7;
+  width: 100%;
+}
+
+hr#last {
+  display: block;
+  width: 15rem;
+  color: #0d151e;
+  margin: 2rem auto;
+  border: 2px solid #0d151e;
+  border-radius: 2px;
+}
+
+/* Media Query */
+
+/* For Desktop */
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .shown {
+    display: none;
+  }
+
+  footer .hidden {
+    display: inline;
+    width: 40%;
+  }
+
+  hr#last {
+    display: none;
+  }
+
+  div.data-dashbord button.see {
+    display: none;
+  }
+
+  button.change:hover,
+  div.data-dashbord button.see:hover,
+  div.data-dash #ccc:hover {
+    color: #f55800;
+    background-color: #fff5e1;
+  }
+
+  div.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  section.projects-section {
+    padding-right: 5rem;
+    padding-left: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  section.projects-section img {
+    width: 50%;
+    min-height: 35.5rem;
+    margin-left: -6rem;
+  }
+
+  div.data-dashbord:hover button.see {
+    display: block;
+  }
+
+  main {
+    background-color: #1c1a19;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  i.burger-menu {
+    display: none;
+  }
+
+  div.mobile-icons {
+    display: none;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  main div.desktop-icons {
+    display: inline;
+  }
+
+  nav.menu {
+    display: block;
+  }
+
+  div.data-dashbord {
+    height: 43.5rem;
+    width: 36.9rem;
+  }
+
+  section.about-me div.container div.first-image {
+    width: 100%;
+    height: 40.3rem;
+    background-image: url(images/f.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+  }
+
+  section.about-me hr {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  section.about-me {
+    padding-left: 10rem;
+  }
+
+  div.data-dashbord h4 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: #fff;
+    margin-left: 2.4rem;
+  }
+
+  section.about-me div.about-me h4:first-child {
+    font-size: 6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  div.image img {
+    display: inline;
+  }
+
+  div.MainParagraph h1 {
+    margin-top: 0;
+  }
+}
