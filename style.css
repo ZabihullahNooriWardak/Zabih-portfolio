@@ -82,8 +82,20 @@ div.desktop-icons ul li {
   font-size: 3rem;
 }
 
+.behind-footer ul li i {
+  color: #505f79;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
 .desktop-icons ul li a i {
   color: #cfcfcf;
+}
+
+.MainParagraph h1,
+.MainParagraph p {
+  margin-bottom: 2.4rem;
+  margin-left: 10.2rem;
 }
 
 div.MainParagraph h1 {
@@ -96,9 +108,9 @@ div.MainParagraph h1 {
   line-height: 8.2rem;
 }
 
-section.projects-section h4,
-.section.projects-section p {
-  margin-bottom: 4rem;
+.container-footer p {
+  width: 32.7rem;
+  margin-top: 5rem;
 }
 
 div.data-dashbord p {
@@ -110,6 +122,17 @@ div.data-dashbord p {
   line-height: 24px;
   color: #fff;
   margin: 1.6rem 2.4rem;
+}
+
+.projects-section h4 {
+  font-weight: 400;
+  font-size: 4rem;
+  font-family: "Crete Round", serif;
+}
+
+section.projects-section h4,
+.section.projects-section p {
+  margin-bottom: 4rem;
 }
 
 .MainParagraph p:first-of-type {
@@ -131,9 +154,14 @@ div.image {
   align-self: flex-start;
 }
 
+.mobile-icons img {
+  display: inline;
+}
+
 div.image img {
   height: 80vh;
   width: 30vw;
+  display: none;
 }
 
 /* Hero Section Ends */
@@ -155,19 +183,25 @@ section.projects-section img {
   margin-bottom: 2rem;
 }
 
-section.about-me hr {
-  margin-right: 3rem;
-  margin-top: 13.9rem;
-  margin-bottom: 14.6rem;
-  color: fff;
-}
-
 .projects-section hr {
   margin-bottom: 8rem;
   margin-top: 3rem;
   background-color: #212121;
   height: 0.00007rem;
   width: 60%;
+}
+
+.behind-footer hr {
+  background: #dfe1e6;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+section.about-me hr {
+  margin-right: 3rem;
+  margin-top: 13.9rem;
+  margin-bottom: 14.6rem;
+  color: fff;
 }
 
 div.multi-post-story > p:first-of-type {
@@ -196,12 +230,6 @@ div.about-me > h4:first-child + p {
   font-size: 2rem;
   line-height: 3.2rem;
   color: #f4f5f7;
-}
-
-.projects-section h4 {
-  font-weight: 400;
-  font-size: 4rem;
-  font-family: "Crete Round", serif;
 }
 
 div.multi-post-story {
@@ -247,6 +275,22 @@ div.multi-post-story div.buttons button.ruby {
   width: 61px;
   height: 40px;
 }
+
+footer button {
+  background: #f55800;
+  color: #fff;
+  padding: 1.2rem;
+  width: 12.2rem;
+  height: 4.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  border: none;
+  margin-bottom: 7.8rem;
+}
+
 div.see button {
   width: 100%;
   height: 5.8rem;
@@ -285,14 +329,12 @@ div.see {
   margin-bottom: 2rem;
 }
 
-div.see button {
+button.see {
   width: 100%;
   height: 5.8rem;
   background-color: #f55800;
   border: none;
   font-family: "Inter", sans-serif;
-  position: absolute;
-  bottom: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -300,7 +342,7 @@ div.see button {
   color: #fff;
 }
 
-button.see {
+.data-dashbord button.see {
   width: 100%;
   height: 5.8rem;
   background-color: #f55800;
@@ -316,18 +358,6 @@ button.see {
 .data-dashbord button.see:hover {
   background-color: #fff5e1;
   color: #f55800;
-}
-.data-dashbord button.see {
-  width: 100%;
-  height: 5.8rem;
-  background-color: #f55800;
-  border: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
 }
 
 div.data-dashbord:hover button.see {
@@ -347,15 +377,22 @@ div.data-dashbord {
   margin-bottom: 2rem;
 }
 
+div.mobile-icons ul li {
+  list-style-type: none;
+  font-size: 4rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+div.skills ul li {
+  margin: 2rem;
+}
+
 div.data-dashbord ul.button li {
   list-style-type: none;
   display: inline;
 }
 
-section.about-me div.about-me button:hover {
-  color: #f55800;
-  background-color: #fff5e1;
-}
 section.about-me div.about-me button {
   width: 15.6rem;
   height: 4.8rem;
@@ -370,14 +407,6 @@ section.about-me div.about-me button {
   color: #fff;
 }
 
-section.projects-section {
-  margin-top: 10.5rem;
-  margin-bottom: 13.1rem;
-  display: grid;
-  grid-template-columns: auto;
-  justify-items: center;
-}
-
 div.data-dashbord ul.button li button {
   background: rgba(255, 255, 255, 0.24);
   padding: 1rem 1.2rem;
@@ -390,6 +419,19 @@ div.data-dashbord ul.button li button {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
+}
+
+section.about-me div.about-me button:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+section.projects-section {
+  margin-top: 10.5rem;
+  margin-bottom: 13.1rem;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
 }
 
 div.data-dashbord div.button button.html {
@@ -422,11 +464,14 @@ nav.menu {
 main div.desktop-icons {
   display: none;
 }
-div.mobile-icons ul li {
+
+.behind-footer ul {
   list-style-type: none;
-  font-size: 4rem;
-  display: inline-block;
-  margin-left: 2rem;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
 }
 
 div.mobile-icons ul {
@@ -437,17 +482,10 @@ div.mobile-icons ul li a {
   color: #cfcfcf;
 }
 
-.mobile-icons img {
-  display: inline;
-}
-
 div.mobile-icons {
   display: block;
 }
 
-div.image img {
-  display: none;
-}
 #mobile {
   width: 8rem;
   height: 18rem;
@@ -457,11 +495,6 @@ div.image img {
   top: 56rem;
 }
 
-.MainParagraph h1,
-.MainParagraph p {
-  margin-bottom: 2.4rem;
-  margin-left: 10.2rem;
-}
 div.MainParagraph {
   margin-left: -7rem;
 }
@@ -484,16 +517,14 @@ div.skills ul {
   text-align: center;
 }
 
-div.skills ul li {
-  margin: 2rem;
-}
-
 div.skills ul img {
   margin-right: 1rem;
 }
-footer .hidden{
+
+footer .hidden {
   display: none;
 }
+
 footer textarea {
   color: #3c3a39;
   font-family: "Inter", sans-serif;
@@ -508,6 +539,7 @@ footer textarea {
   margin-bottom: 2.4rem;
   padding: 1rem;
 }
+
 footer .container-footer {
   display: flex;
   justify-content: space-evenly;
@@ -518,10 +550,7 @@ footer .container-footer {
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
-.container-footer p{
-  width:32.7rem;
-  margin-top: 5rem;
-}
+
 footer input {
   border: none;
   font-family: "Roboto", sans-serif;
@@ -534,38 +563,7 @@ footer input {
   border-bottom: solid 1px #dbd8d7;
   width: 100%;
 }
-footer button {
-  background: #f55800;
-  color: #fff;
-  padding: 1.2rem;
-  width: 12.2rem;
-  height: 4.8rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 2.4rem;
-  border: none;
-  margin-bottom:7.8rem;
-}
-.behind-footer hr {
-  background: #dfe1e6;
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
-.behind-footer ul li i {
-  color: #505f79;
-  font-size: 3rem;
-  margin-left: 2rem;
-}
-.behind-footer ul {
-  list-style-type: none;
-  width: 20%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 4rem;
-}
+
 hr#last {
   display: block;
   width: 15rem;
@@ -574,49 +572,60 @@ hr#last {
   border: 2px solid #0d151e;
   border-radius: 2px;
 }
+
 /* Media Query */
 
-/* For Smarth phones */
+/* For Desktop */
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 62.5%;
   }
-  .container-footer p,.container-footer .details {
-    width:40%;
+
+  .container-footer p,
+  .container-footer .details {
+    width: 40%;
     text-align: start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .shown {
-    display:none;
+    display: none;
   }
+
   footer .hidden {
-    display:inline;
+    display: inline;
     width: 40%;
   }
-  [placeholder='First Name']{
+
+  [placeholder="First Name"] {
     margin-right: 5rem;
   }
 
-  hr#last{
+  hr#last {
     display: none;
   }
+
   div.data-dashbord button.see {
     display: none;
   }
+
   button.change:hover,
   div.data-dashbord button.see:hover,
   div.data-dash #ccc:hover {
     color: #f55800;
     background-color: #fff5e1;
   }
+
   div.skills {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
   }
+
   section.projects-section {
     padding-right: 5rem;
     padding-left: 4.5rem;
@@ -634,6 +643,7 @@ hr#last {
   div.data-dashbord:hover button.see {
     display: block;
   }
+
   main {
     background-color: #1c1a19;
     height: 100vh;
