@@ -477,7 +477,7 @@ nav.menu {
   display: none;
 }
 
-main ul {
+main > ul {
   display: none;
 }
 
@@ -496,10 +496,6 @@ div.mobile-icons ul {
 
 div.mobile-icons ul li a {
   color: #cfcfcf;
-}
-
-div.mobile-icons {
-  display: block;
 }
 
 #mobile {
@@ -605,13 +601,13 @@ hr#last {
     font-size: 62.5%;
   }
 
-  main ul li {
+  main > ul li {
     margin-bottom: 1rem;
     list-style-type: none;
     font-size: 2.5rem;
   }
 
-  main ul li a i {
+  main > ul li a i {
     margin-left: 3rem;
     color: #cfcfcf;
   }
@@ -679,7 +675,7 @@ hr#last {
     display: none;
   }
 
-  main ul {
+  main > ul {
     display: grid;
     grid-auto-columns: 125px;
   }
