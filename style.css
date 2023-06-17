@@ -612,6 +612,32 @@ hr#last {
     color: #cfcfcf;
   }
 
+  main > ul li :hover {
+    animation: icon 0.7s ease-in-out 0s 1;
+  }
+
+  @keyframes icon {
+    20% {
+      color: white;
+      transform: scale(1.1) skew(5deg);
+    }
+
+    50% {
+      transform: scale(1.2) skewY(10deg);
+      color: goldenrod;
+    }
+
+    80% {
+      transform: scale(1.3) skew(15deg);
+      color: orange
+    }
+
+    100% {
+      color: yellow;
+      transform: scale(1.4) skew(20deg);
+    }
+  }
+
   .shown {
     display: none;
   }
