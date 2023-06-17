@@ -31,6 +31,28 @@ header span {
   font-size: 3rem;
   font-family: "Licorice", cursive;
   color: #fff;
+  animation: zabih 1.3s ease-in-out 0s 1;
+}
+
+@keyframes zabih {
+  10% {
+    font-size: 3.4rem;
+  }
+
+  40% {
+    font-size: 3.8rem;
+    color: grey;
+  }
+
+  80% {
+    font-size: 4rem;
+    color: orangered;
+  }
+
+  100% {
+    font-size: 4.2rem;
+    color: black;
+  }
 }
 
 header nav ul li a {
@@ -74,22 +96,16 @@ main {
   align-items: center;
 }
 
-div.desktop-icons ul li {
-  margin-bottom: 1rem;
-  margin-right: 2rem;
-  margin-left: 3.6rem;
-  list-style-type: none;
-  font-size: 3rem;
-}
-
 .behind-footer ul li i {
   color: #505f79;
   font-size: 3rem;
   margin-left: 2rem;
+  transition: all 0.4s ease-in-out;
 }
 
-.desktop-icons ul li a i {
-  color: #cfcfcf;
+.behind-footer ul li i:hover {
+  color: black;
+  font-size: 3.5rem;
 }
 
 .MainParagraph h1,
@@ -551,6 +567,13 @@ footer .container-footer {
   font-weight: bold;
 }
 
+button.change:hover,
+div.data-dashbord button.see:hover,
+div.data-dash #ccc:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
 footer input {
   border: none;
   font-family: "Roboto", sans-serif;
@@ -582,6 +605,18 @@ hr#last {
     font-size: 62.5%;
   }
 
+  div.desktop-icons ul li {
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 3.6rem;
+    list-style-type: none;
+    font-size: 3rem;
+  }
+
+  .desktop-icons ul li a i {
+    color: #cfcfcf;
+  }
+
   .shown {
     display: none;
   }
@@ -597,13 +632,6 @@ hr#last {
 
   div.data-dashbord button.see {
     display: none;
-  }
-
-  button.change:hover,
-  div.data-dashbord button.see:hover,
-  div.data-dash #ccc:hover {
-    color: #f55800;
-    background-color: #fff5e1;
   }
 
   div.skills {
