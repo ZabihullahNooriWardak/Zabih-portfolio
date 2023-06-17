@@ -551,6 +551,13 @@ footer .container-footer {
   font-weight: bold;
 }
 
+button.change:hover,
+div.data-dashbord button.see:hover,
+div.data-dash #ccc:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
 footer input {
   border: none;
   font-family: "Roboto", sans-serif;
@@ -597,13 +604,6 @@ hr#last {
 
   div.data-dashbord button.see {
     display: none;
-  }
-
-  button.change:hover,
-  div.data-dashbord button.see:hover,
-  div.data-dash #ccc:hover {
-    color: #f55800;
-    background-color: #fff5e1;
   }
 
   div.skills {
