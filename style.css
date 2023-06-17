@@ -96,22 +96,16 @@ main {
   align-items: center;
 }
 
-div.desktop-icons ul li {
-  margin-bottom: 1rem;
-  margin-right: 2rem;
-  margin-left: 3.6rem;
-  list-style-type: none;
-  font-size: 3rem;
-}
-
 .behind-footer ul li i {
   color: #505f79;
   font-size: 3rem;
   margin-left: 2rem;
+  transition: all 0.4s ease-in-out;
 }
 
-.desktop-icons ul li a i {
-  color: #cfcfcf;
+.behind-footer ul li i:hover {
+  color: black;
+  font-size: 3.5rem;
 }
 
 .MainParagraph h1,
@@ -609,6 +603,18 @@ hr#last {
 @media screen and (min-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  div.desktop-icons ul li {
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 3.6rem;
+    list-style-type: none;
+    font-size: 3rem;
+  }
+
+  .desktop-icons ul li a i {
+    color: #cfcfcf;
   }
 
   .shown {
