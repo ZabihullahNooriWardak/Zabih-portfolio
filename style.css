@@ -477,7 +477,7 @@ nav.menu {
   display: none;
 }
 
-main div.desktop-icons {
+main ul {
   display: none;
 }
 
@@ -605,15 +605,14 @@ hr#last {
     font-size: 62.5%;
   }
 
-  div.desktop-icons ul li {
+  main ul li {
     margin-bottom: 1rem;
-    margin-right: 2rem;
-    margin-left: 3.6rem;
     list-style-type: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-  .desktop-icons ul li a i {
+  main ul li a i {
+    margin-left: 3rem;
     color: #cfcfcf;
   }
 
@@ -680,8 +679,9 @@ hr#last {
     display: none;
   }
 
-  main div.desktop-icons {
-    display: inline;
+  main ul {
+    display: grid;
+    grid-auto-columns: 125px;
   }
 
   nav.menu {
