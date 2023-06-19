@@ -89,7 +89,7 @@ i.burger-menu {
 
 main {
   background-color: #1c1a19;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -682,7 +682,7 @@ hr#last {
 
   main {
     background-color: #1c1a19;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
