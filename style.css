@@ -67,6 +67,10 @@ header nav ul li a {
   flex-basis: 30%;
 }
 
+main > ul {
+  display: none;
+}
+
 .menu ul {
   display: flex;
   justify-content: space-around;
@@ -477,10 +481,6 @@ nav.menu {
   display: none;
 }
 
-main > ul {
-  display: none;
-}
-
 .behind-footer ul {
   list-style-type: none;
   width: 20%;
@@ -638,6 +638,7 @@ hr#last {
   .MainParagraph p:first-of-type {
     font-size: 3.2rem;
   }
+
   .shown {
     display: none;
   }
@@ -688,9 +689,9 @@ hr#last {
     justify-content: space-evenly;
     align-items: center;
   }
-  main ul{
+
+  main ul {
     margin-left: 3rem;
-   /* flex-basis: auto; */
   }
 
   main .MainParagraph {
