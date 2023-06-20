@@ -262,7 +262,9 @@
         </p>
         <form action="https://formspree.io/f/xvoneaew" method="post">
           <div class="details">
-            <input
+            <label for="firstName">
+              <input
+            id="firstName"
               name="firstName"
               required
               class="hidden"
@@ -270,37 +272,53 @@
               type="text"
               placeholder="First Name"
             />
+            </label>
+           <label for="lastName">
             <input
-              class="hidden"
-              name="lastName"
-              required
-              type="text"
-              placeholder="Last Name"
-            /><br />
+            class="hidden"
+            name="lastName"
+            id="lastName"
+            required
+            type="text"
+            placeholder="Last Name"
+          />
+           </label>
+           
+            <br />
+          <label for="fullName">
             <input
-              type="text"
-              class="shown"
-              name="FullName"
-              required
-              maxlength="30"
-              placeholder="Full name"
-            />
+            type="text"
+            class="shown"
+            name="FullName"
+            id="fullName"
+            required
+            maxlength="30"
+            placeholder="Full name"
+          />
+          </label>
+          <label for="email">
             <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            /><br />
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          </label>
+          <br />
+          <label for="textArea">
             <textarea
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Write me something..."
-              maxlength="500"
-              required
-            ></textarea
-            ><br />
+            name="message"
+            id="textArea"
+            cols="30"
+            rows="10"
+            placeholder="Write me something..."
+            maxlength="500"
+            required
+          ></textarea
+          >
+          </label>
+          <br />
             <button class="change" type="submit">Get in touch</button>
           </div>
         </form>
