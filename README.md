@@ -105,9 +105,9 @@ to run this project you need Google chrome or other browser
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- ● integration with javascript
-- ● Adding more html content
-- ● Adding links to my projects
+ ● integration with javascript
+ ● Adding more html content
+ ● Adding links to my projects
 
 <!-- CONTRIBUTING -->
 
