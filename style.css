@@ -260,7 +260,6 @@ div.about-me > h3:first-child + p {
 
 div.multi-post-story {
   width: 37.5rem;
-
 }
 
 div.multi-post-story #second {
@@ -315,6 +314,10 @@ footer button {
   line-height: 2.4rem;
   border: none;
   margin-bottom: 7.8rem;
+}
+
+.details button {
+  align-self: center;
 }
 
 div.see button {
@@ -401,15 +404,11 @@ div.data-dashbord {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
   margin-bottom: 2rem;
 }
 
 div.data-dashbord:hover {
-  padding-bottom: 0;
-}
-
-div.data-dashbord {
   padding-bottom: 0;
 }
 
@@ -559,7 +558,6 @@ footer textarea {
   border: none;
   width: 100%;
   height: 11rem;
-  /* margin-bottom: 2.4rem; */
   padding: 1rem;
 }
 
@@ -609,9 +607,6 @@ hr#last {
   flex-direction: column;
 }
 
-.details button {
-  align-self: center;
-}
 /* Media Query */
 
 /* For Desktop */
@@ -622,6 +617,8 @@ hr#last {
   }
 
   div.data-dashbord {
+    height: 43.5rem;
+    width: 36.9rem;
     padding-bottom: 2rem;
   }
 
@@ -752,11 +749,6 @@ hr#last {
 
   nav.menu {
     display: block;
-  }
-
-  div.data-dashbord {
-    height: 43.5rem;
-    width: 36.9rem;
   }
 
   section.about-me div.container div.first-image {
