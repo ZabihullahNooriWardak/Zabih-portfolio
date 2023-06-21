@@ -228,7 +228,7 @@ section.about-me hr {
   color: fff;
 }
 
-div.multi-post-story > p:first-of-type {
+div.multi-post-story > h6:first-of-type {
   color: #091e42;
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -237,7 +237,7 @@ div.multi-post-story > p:first-of-type {
   line-height: 5.2rem;
 }
 
-div.about-me > h4:first-child {
+div.about-me > h3:first-child {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -246,7 +246,7 @@ div.about-me > h4:first-child {
   color: #f55800;
 }
 
-div.about-me > h4:first-child + p {
+div.about-me > h3:first-child + p {
   font-family: "Inter", sans-serif;
   margin-top: 2.4rem;
   font-style: normal;
@@ -752,7 +752,7 @@ hr#last {
     padding-left: 10rem;
   }
 
-  div.data-dashbord h4 {
+  div.data-dashbord h6 {
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
@@ -762,7 +762,7 @@ hr#last {
     margin-left: 2.4rem;
   }
 
-  section.about-me div.about-me h4:first-child {
+  section.about-me div.about-me h3:first-child {
     font-size: 6rem;
     margin-bottom: 2.4rem;
   }
