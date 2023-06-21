@@ -86,7 +86,8 @@ i.burger-menu {
   color: #fff;
   font-size: 2rem;
 }
-i.envelop{
+
+i.envelop {
   font-size: 2rem;
 }
 
@@ -388,9 +389,6 @@ button.see {
 div.data-dashbord:hover button.see {
   display: block;
 }
-div.data-dashbord:hover {
-  padding-bottom: 0;
-}
 
 div.data-dashbord {
   background-image: url(images/availiability.png);
@@ -406,6 +404,10 @@ div.data-dashbord {
   margin-bottom: 2rem;
 }
 
+div.data-dashbord:hover {
+  padding-bottom: 0;
+}
+
 div.mobile-icons ul li {
   list-style-type: none;
   font-size: 2.5rem;
@@ -418,6 +420,17 @@ div.skills ul li {
 }
 
 div.data-dashbord ul.button li {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 1rem 1.2rem;
+  padding-top: 1rem;
+  border: none;
+  margin-left: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
   list-style-type: none;
   display: inline;
 }
@@ -433,20 +446,6 @@ section.about-me div.about-me button {
   font-weight: 700;
   font-size: 1.7rem;
   line-height: 2.4rem;
-  color: #fff;
-}
-
-div.data-dashbord ul.button li {
-  background: rgba(255, 255, 255, 0.24);
-  padding: 1rem 1.2rem;
-  padding-top: 1rem;
-  border: none;
-  margin-left: 1.6rem;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
   color: #fff;
 }
 
