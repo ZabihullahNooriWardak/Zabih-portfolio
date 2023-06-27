@@ -364,8 +364,6 @@ div.see button {
   background-color: #f55800;
   border: none;
   font-family: "Inter", sans-serif;
-  position: absolute;
-  bottom: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -389,7 +387,9 @@ div.multi-post-story > :last-child {
 div.see {
   width: 36.9rem;
   background-image: url(images/professional.png);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
   height: 43.5rem;
