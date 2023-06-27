@@ -113,6 +113,9 @@ nav ul li {
 
 .burger-menue ul li a {
   color: #fff5e1;
+  width: 100%;
+  height: 100%;
+  display: block;
   text-decoration: none;
 }
 
