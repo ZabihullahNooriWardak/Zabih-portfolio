@@ -81,6 +81,44 @@ nav ul li {
   display: inline;
 }
 
+/* burger-menue actions */
+.burger-menue {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #3c3a39;
+  color: #fff5e1;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.burger-menue i {
+  margin-top: 4rem;
+  margin-right: 5rem;
+  align-self: flex-end;
+}
+
+.burger-menue ul li {
+  padding-bottom: 1.5rem;
+  list-style-type: none;
+  margin-top: 3rem;
+  width: 300px;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.burger-menue ul li a {
+  color: #fff5e1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+
 i.burger-menu {
   display: block;
   color: #fff;
@@ -326,8 +364,6 @@ div.see button {
   background-color: #f55800;
   border: none;
   font-family: "Inter", sans-serif;
-  position: absolute;
-  bottom: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -351,11 +387,13 @@ div.multi-post-story > :last-child {
 div.see {
   width: 36.9rem;
   background-image: url(images/professional.png);
-  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   height: 43.5rem;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 button.see {
