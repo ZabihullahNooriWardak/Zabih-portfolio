@@ -117,10 +117,10 @@ main {
   position: fixed;
   background-color: #3c3a39;
   color: #fff5e1;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 4.4rem;
 }
 
 .burger-menue i {
@@ -133,7 +133,7 @@ main {
   padding-bottom: 1.5rem;
   list-style-type: none;
   margin-top: 3rem;
-  width: 300px;
+  width: 30rem;
   border-bottom: 1px solid #6f6c6b;
 }
 
