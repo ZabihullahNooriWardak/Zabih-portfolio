@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 40%;
+  font-size: 50%;
 }
 
 header {
@@ -21,9 +21,11 @@ header {
   padding-bottom: 2.6rem;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #3e3c3c;
+  padding-left: 2rem;
+  padding-right: 2.5rem;
 }
 
 header span {
@@ -168,7 +170,7 @@ div.MainParagraph h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 6.2rem;
 }
 
 .container-footer h4 {
@@ -242,7 +244,7 @@ section.about-me div.container div.first-image {
 }
 
 section.projects-section img {
-  width: 37.5rem;
+  width: 35.5rem;
   min-height: 35.5rem;
   margin-bottom: 2rem;
 }
@@ -297,7 +299,7 @@ div.about-me > h3:first-child + p {
 }
 
 div.multi-post-story {
-  width: 37.5rem;
+  width: 35.5rem;
 }
 
 div.multi-post-story #second {
