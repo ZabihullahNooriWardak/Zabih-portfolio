@@ -145,12 +145,17 @@ main {
   position: fixed;
   top: 0;
 }
+
 .burger-menue ul li a {
   color: #fff5e1;
   width: 100%;
   height: 100%;
   display: block;
   text-decoration: none;
+}
+
+.popUpHeader i {
+  font-size: 2.4rem;
 }
 
 .behind-footer ul li i {
@@ -172,6 +177,12 @@ main {
   margin-left: 10.2rem;
 }
 
+.popUpHeader h1 {
+  font-size: 2.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
 div.MainParagraph h1 {
   margin-top: 13rem;
   color: #f55800;
@@ -185,6 +196,14 @@ div.MainParagraph h1 {
   width: 35.7rem;
   margin-top: 5rem;
   text-align: center;
+}
+
+.popUpParent p {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  line-height: 2.4rem;
+  max-height: 300px;
+  overflow: auto;
 }
 
 div.data-dashbord p {
@@ -232,6 +251,11 @@ div.image {
   display: inline;
 }
 
+.popUpParent img {
+  width: 90%;
+  height: 50%;
+}
+
 div.image img {
   height: 80vh;
   width: 30vw;
@@ -276,6 +300,16 @@ section.about-me hr {
   margin-top: 13.9rem;
   margin-bottom: 14.6rem;
   color: fff;
+}
+
+div.data-dashbord h6 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #fff;
+  margin-left: 2.4rem;
 }
 
 div.multi-post-story > h6:first-of-type {
@@ -368,6 +402,19 @@ footer button {
   align-self: center;
 }
 
+.popUpFooter button {
+  background-color: #ff6b00;
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.51px;
+  border: none;
+  padding: 0.7rem;
+  margin-right: 2rem;
+}
+
 div.see button {
   width: 100%;
   height: 5.8rem;
@@ -432,14 +479,7 @@ button.see {
   line-height: 24px;
   color: #fff;
 }
-.popUpHeader h1 {
-  font-size: 2.8rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-.popUpHeader i {
-  font-size: 2.4rem;
-}
+
 .popUpParent {
   padding: 2rem;
   margin: 4rem 2rem;
@@ -463,24 +503,6 @@ button.see {
   justify-content: flex-start;
 }
 
-.popUpParent p {
-  font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
-  line-height: 2.4rem;
-}
-
-.popUpFooter button {
-  background-color: #ff6b00;
-  color: #fff;
-  font-size: 1.7rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  line-height: 2.4rem;
-  letter-spacing: 0.51px;
-  border: none;
-  padding: 0.7rem;
-  margin-right: 2rem;
-}
 .popUpParent ul li {
   list-style-type: none;
   padding: 0.5rem;
@@ -489,10 +511,7 @@ button.see {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.popUpParent img {
-  width: 90%;
-  height: 50%;
-}
+
 .data-dashbord button.see:hover {
   background-color: #fff5e1;
   color: #f55800;
@@ -724,6 +743,57 @@ hr#last {
     font-size: 48%;
   }
 
+  .popUpParent {
+    /* width:90%; */
+    height: 90%;
+    display: grid;
+    gap: 10px;
+    grid-auto-columns: 400px auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .popUpHeader {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .popUpParent p {
+    grid-column: 2/3;
+    max-width: 60%;
+    margin-left: 40px;
+    grid-row: 3/4;
+    overflow: auto;
+  }
+
+  main ul {
+    margin-left: 3rem;
+  }
+
+  main > ul {
+    display: grid;
+    grid-auto-columns: 125px;
+  }
+
+  .popUpParent ul {
+    grid-column: 1/3;
+    align-self: start;
+    grid-row: 2/3;
+  }
+
+  .popUpParent img {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .popUpFooter {
+    margin-left: 40px;
+    align-self: end;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
   div.data-dashbord {
     height: 43.5rem;
     width: 36.9rem;
@@ -813,7 +883,7 @@ hr#last {
   section.projects-section img {
     width: 50%;
     min-height: 35.5rem;
-    margin-left: -6rem;
+    margin-left: 0.0000000000008rem;
   }
 
   div.data-dashbord:hover button.see {
@@ -827,10 +897,6 @@ hr#last {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  }
-
-  main ul {
-    margin-left: 3rem;
   }
 
   main .MainParagraph {
@@ -848,11 +914,6 @@ hr#last {
 
   #mobile {
     display: none;
-  }
-
-  main > ul {
-    display: grid;
-    grid-auto-columns: 125px;
   }
 
   nav.menu {
