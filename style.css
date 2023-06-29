@@ -179,7 +179,7 @@ main {
 }
 
 .popUpHeader h1 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -403,6 +403,14 @@ footer button {
   align-self: center;
 }
 
+.popUpFooter {
+  align-self: center;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .popUpFooter button {
   background-color: #ff6b00;
   color: #fff;
@@ -412,8 +420,8 @@ footer button {
   line-height: 2.4rem;
   letter-spacing: 0.51px;
   border: none;
-  padding: 0.7rem;
-  margin-right: 2rem;
+  padding: 1rem 3rem;
+  /* margin-right: 2rem; */
 }
 
 div.see button {
@@ -499,8 +507,9 @@ button.see {
 }
 
 .popUpParent ul {
+  margin-bottom: 2rem;
   display: flex;
-  margin-top: 1rem;
+  margin-top: 3rem;
   justify-content: flex-start;
 }
 
@@ -744,6 +753,10 @@ hr#last {
     font-size: 48%;
   }
 
+  .popUpHeader h1 {
+    font-size: 2.8rem;
+  }
+
   .popUpParent {
     /* width:90%; */
     height: 90%;
@@ -757,7 +770,10 @@ hr#last {
     grid-column: 1/3;
     grid-row: 1/2;
   }
-
+  
+  .popUpParent ul{
+margin-top: -2rem;
+  }
   .popUpParent p {
     grid-column: 2/3;
     max-width: 60%;
@@ -785,11 +801,15 @@ hr#last {
     grid-column: 1/2;
     grid-row: 3/5;
     width: 100%;
-    height: 60vh;
+    height: 65vh;
   }
 
   .popUpFooter {
-    margin-left: 40px;
+    margin-top: 0;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 25px;
     align-self: end;
     grid-column: 2/3;
     grid-row: 4/5;
