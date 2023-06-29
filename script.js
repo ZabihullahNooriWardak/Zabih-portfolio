@@ -132,10 +132,10 @@ for (let i = 0; i < 6; i += 1) {
 }
 
 const buttonSee = document.querySelectorAll('.see');
-let dynmicTitle = '';
-let dynamicImage = " <img src='images/availiability.png'>";
 for (let i = 0; i < 7; i += 1) {
   buttonSee[i].addEventListener('click', () => {
+    let dynmicTitle = '';
+    let dynamicImage = " <img src='images/availiability.png'>";
     switch (i) {
       case 2:
         dynmicTitle = 'Data Dashbord HealthCare';
