@@ -28,13 +28,14 @@ for (let i = 0; i < LiInMenu.length; i += 1) {
 
 // javascript for popUpCards
 
-let array = [  {
-  title: " ",
-  description: ` `,
-  technology: ` `,
-  image:`images/professional.png`,
-  button:`  <button class="see">See project</button>`
-},
+let array = [
+  {
+    title: " ",
+    description: ` `,
+    technology: ` `,
+    image: `images/professional.png`,
+    button: `  <button class="see">See project</button>`,
+  },
   {
     title: "<h6>Data Dashbord <br />Healthcare</h6>",
     description: ` <p>
@@ -46,7 +47,7 @@ let array = [  {
     <li>Bootstrap</li>
     <li>Ruby</li>
   </ul>`,
-  button:`  <button class="see">See project</button>`
+    button: `  <button class="see">See project</button>`,
   },
   {
     title: " <h6>Website portfolio</h6> ",
@@ -59,7 +60,7 @@ let array = [  {
     <li>Bootstrap</li>
     <li>Ruby</li>
   </ul>`,
-  button:`  <button class="see">See project</button>`
+    button: `  <button class="see">See project</button>`,
   },
   {
     title: " <h6>Profesional Art <br />Printing Data More</h6>",
@@ -72,7 +73,7 @@ let array = [  {
     <li>Bootstrap</li>
     <li>Ruby</li>
   </ul>`,
-  button:`  <button class="see">See project</button>`
+    button: `  <button class="see">See project</button>`,
   },
   {
     title: "  <h6>Data Dashbord <br />Healthcare</h6>",
@@ -85,7 +86,7 @@ let array = [  {
     <li>Bootstrap</li>
     <li>Ruby</li>
   </ul>`,
-  button:`  <button class="see">See project</button>`
+    button: `  <button class="see">See project</button>`,
   },
   {
     title: "   <h6>Profesional Art <br />Printing Data More</h6>",
@@ -98,10 +99,10 @@ let array = [  {
     <li>Bootstrap</li>
     <li>Ruby</li>
   </ul>`,
-  button:`  <button class="see">See project</button>`
+    button: `  <button class="see">See project</button>`,
   },
 ];
-let insertion = function (title, technology,description,button) {
+let insertion = function (title, technology, description, button) {
   const projectSection = document.querySelector(".projects-section");
   const section = document.createElement("div");
   projectSection.appendChild(section);
@@ -115,38 +116,50 @@ ${button}
 `;
 };
 for (let i = 0; i < 6; i++) {
-  insertion(array[i]["title"], array[i]["technology"],array[i]['description'],array[i]['button']);
-  if(i===0){
-    let dataDash= document.querySelector('.data-dashbord');
-   dataDash.style.background=`url(${array[i]['image']})`;
-   dataDash.style.paddingBottom='0px';
-    let firstCardButton=document.querySelector('.data-dashbord button.see');
-    firstCardButton.style.display='inline';
+  insertion(
+    array[i]["title"],
+    array[i]["technology"],
+    array[i]["description"],
+    array[i]["button"]
+  );
+  if (i === 0) {
+    let dataDash = document.querySelector(".data-dashbord");
+    dataDash.style.background = `url(${array[i]["image"]})`;
+    dataDash.style.paddingBottom = "0px";
+    let firstCardButton = document.querySelector(".data-dashbord button.see");
+    firstCardButton.style.display = "inline";
   }
 }
 
 let buttonSee = document.querySelectorAll(".see");
-let dynmicTitle='';
-for (let i=0;i<6;i++){
+let dynmicTitle = "";
+let dynamicImage = " <img src='images/availiability.png'>";
+for (let i = 0; i < 6; i++) {
   buttonSee[i].addEventListener("click", function () {
-    switch (i){
+    switch (i) {
       case 1:
-        dynmicTitle = 'Data Dashbord HealthCare';
+        dynmicTitle = "Data Dashbord HealthCare";
+        dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 2:
-        dynmicTitle = 'Website portfolio';
+        dynmicTitle = "Website portfolio";
+        dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 3:
-        dynmicTitle = 'Professional Art Printing Data More';
+        dynmicTitle = "Professional Art Printing Data More";
+        dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 4:
-        dynmicTitle = 'Data Dashbord HealthCare';
+        dynmicTitle = "Data Dashbord HealthCare";
+        dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 5:
-        dynmicTitle = 'Professional Art Printing Data More';
+        dynmicTitle = "Professional Art Printing Data More";
+        dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 0:
-        dynmicTitle = 'Professional Art Printing Printing Data';
+        dynmicTitle = "Professional Art Printing Printing Data";
+        dynamicImage = '   <img src="images/professional.png">';
         break;
     }
     let divParent = document.createElement("div");
@@ -162,7 +175,7 @@ for (let i=0;i<6;i++){
    <li>Bootstrap</li>
    <li>Ruby on Rails</li>
    </ul>
-   <img src="images/availiability.png">
+${dynamicImage}
    <p>      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illum ex ducimus quaerat inventore officia blanditiis impedit suscipit, unde nulla, porro magnam incidunt corporis quod repellat mollitia eum nesciunt! Sunt!
    <div class='popUpFooter'>
    <button>See live</button>
@@ -181,5 +194,4 @@ for (let i=0;i<6;i++){
       body.removeChild(divParent);
     });
   });
-
 }
