@@ -761,7 +761,7 @@ hr#last {
     height: 90%;
     display: grid;
     gap: 10px;
-    grid-auto-columns: 400px auto;
+    grid-auto-columns: 780px  auto;
     grid-template-rows: auto auto auto auto;
   }
 
