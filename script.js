@@ -116,7 +116,6 @@ ${button}
 };
 for (let i = 0; i < 6; i++) {
   insertion(array[i]["title"], array[i]["technology"],array[i]['description'],array[i]['button']);
-  document.querySelector('section button').className=`button${i}`;
   if(i===0){
     let dataDash= document.querySelector('.data-dashbord');
    dataDash.style.background=`url(${array[i]['image']})`;
@@ -127,14 +126,35 @@ for (let i = 0; i < 6; i++) {
 }
 
 let buttonSee = document.querySelectorAll(".see");
-buttonSee.forEach(function (element) {
-  element.addEventListener("click", function () {
+let dynmicTitle='';
+for (let i=0;i<6;i++){
+  buttonSee[i].addEventListener("click", function () {
+    switch (i){
+      case 1:
+        dynmicTitle = 'Data Dashbord HealthCare';
+        break;
+      case 2:
+        dynmicTitle = 'Website portfolio';
+        break;
+      case 3:
+        dynmicTitle = 'Professional Art Printing Data More';
+        break;
+      case 4:
+        dynmicTitle = 'Data Dashbord HealthCare';
+        break;
+      case 5:
+        dynmicTitle = 'Professional Art Printing Data More';
+        break;
+      case 0:
+        dynmicTitle = 'Professional Art Printing Printing Data';
+        break;
+    }
     let divParent = document.createElement("div");
     let popUp = document.createElement("div");
     popUp.className = "popUpParent";
     popUp.innerHTML = `
    <div class='popUpHeader'>
-   <h1>Multi Post Stories</h1>
+   <h1>${dynmicTitle}</h1>
    <i class='bx bx-x'></i>
    </div>
    <ul>
@@ -161,4 +181,5 @@ buttonSee.forEach(function (element) {
       body.removeChild(divParent);
     });
   });
-});
+
+}
