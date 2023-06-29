@@ -132,100 +132,99 @@ for (let i = 0; i < 6; i += 1) {
 }
 
 const buttonSee = document.querySelectorAll('.see');
-let dynmicTitle = 'default No title';
+let dynmicTitle = '';
 let dynamicImage = " <img src='images/availiability.png'>";
-function popUpAddingItems() {
-  const divParent = document.createElement('div');
-  const popUp = document.createElement('div');
-  popUp.className = 'popUpParent';
-  popUp.innerHTML = `
- <div class='popUpHeader'>
- <h1>${dynmicTitle}</h1>
- <i class='bx bx-x'></i>
- </div>
- <ul>
- <li>HTML</li>
- <li>Bootstrap</li>
- <li>Ruby on Rails</li>
- </ul>
-${dynamicImage}
- <p>             Lorem ipsum dolor sit amet
-  consectetur adipisicing elit.
-   Similique cumque fugit, corrupti odio 
-   ex eos provident reprehenderit expedita
-    exercitationem saepe dolor.
-    e  ex eos provident reprehenderit expedita
-    exercitationem saepe dolor.
-    ex eos provident reprehenderit expedita
-    exercitationem saepe dolor.
-     consectetur adipisicing elit. Quos illum ex ducimus quaerat
-      inventore officia blanditiis impedit suscipit,
-       unde nulla, porro magnam ex eos provident reprehenderit expedita
-       exercitationem saepe dolor.x eos provident reprehenderit expedita
-    exercitationem saepe dolor.
-     consectetur adipisicing elit. Quos illum ex ducimus quaerat
-      inventore officia blanditiis impedit suscipit,
-       unde nulla, porro magnam ex eos provident reprehenderit expedita
-       exercitationem saepe dolor.
-       
-        consectetur adipisicing elit. Quos illum ex ducimus quaerat
-         inventore officia blanditiis impedit suscipit,
-          unde nulla, porro magnam
-     consectetur adipisicing elit. Quos illum ex ducimus quaerat
-      inventore officia blanditiis impedit suscipit,
-       unde nulla, porro magnam
-        incidunt corporis quod 
-       repellat mollitia eum nesciunt! Sunt!</p>
- <div class='popUpFooter'>
- <button>See live</button>
- <button>See source </button>
- </div>
-`;
-
-  divParent.appendChild(popUp);
-  const body = document.querySelector('body');
-  body.appendChild(divParent);
-  divParent.className = 'zzz';
-
-  //  for hiding popUp
-  const crossX = document.querySelector('.popUpHeader i');
-  crossX.addEventListener('click', () => {
-    body.removeChild(divParent);
-  });
-}
 for (let i = 0; i < 7; i += 1) {
-  switch (i) {
-    case 2:
-      dynmicTitle = 'Data Dashbord HealthCare';
-      dynamicImage = " <img src='images/availiability.png'>";
-      break;
-    case 3:
-      dynmicTitle = 'Website portfolio';
-      dynamicImage = " <img src='images/availiability.png'>";
-      break;
-    case 4:
-      dynmicTitle = 'Professional Art Printing Data More';
-      dynamicImage = " <img src='images/availiability.png'>";
-      break;
-    case 5:
-      dynmicTitle = 'Data Dashbord HealthCare';
-      dynamicImage = " <img src='images/availiability.png'>";
-      break;
-    case 6:
-      dynmicTitle = 'Professional Art Printing Data More';
-      dynamicImage = "<img src='images/availiability.png'>";
-      break;
-    case 0:
-      dynmicTitle = 'Multi-post Stories';
-      dynamicImage = "<img src='images/woman.png'>";
-      break;
-    case 1:
-      dynmicTitle = 'Professional Art Printing Printing Data';
-      dynamicImage = '   <img src="images/professional.png">';
-      break;
-    default:
-      dynamicImage = 'no image';
-      dynmicTitle = 'no title';
-  }
-  buttonSee[i].addEventListener('click', popUpAddingItems);
+  buttonSee[i].addEventListener('click', () => {
+    switch (i) {
+      case 2:
+        dynmicTitle = 'Data Dashbord HealthCare';
+        dynamicImage = " <img src='images/availiability.png'>";
+        break;
+      case 3:
+        dynmicTitle = 'Website portfolio';
+        dynamicImage = " <img src='images/availiability.png'>";
+        break;
+      case 4:
+        dynmicTitle = 'Professional Art Printing Data More';
+        dynamicImage = " <img src='images/availiability.png'>";
+        break;
+      case 5:
+        dynmicTitle = 'Data Dashbord HealthCare';
+        dynamicImage = " <img src='images/availiability.png'>";
+        break;
+      case 6:
+        dynmicTitle = 'Professional Art Printing Data More';
+        dynamicImage = "<img src='images/availiability.png'>";
+        break;
+      case 0:
+        dynmicTitle = 'Multi-post Stories';
+        dynamicImage = "<img src='images/woman.png'>";
+        break;
+      case 1:
+        dynmicTitle = 'Professional Art Printing Printing Data';
+        dynamicImage = '   <img src="images/professional.png">';
+        break;
+      default:
+        dynamicImage = 'no image';
+        dynmicTitle = 'no title';
+    }
+    const divParent = document.createElement('div');
+    const popUp = document.createElement('div');
+    popUp.className = 'popUpParent';
+    popUp.innerHTML = `
+   <div class='popUpHeader'>
+   <h1>${dynmicTitle}</h1>
+   <i class='bx bx-x'></i>
+   </div>
+   <ul>
+   <li>HTML</li>
+   <li>Bootstrap</li>
+   <li>Ruby on Rails</li>
+   </ul>
+${dynamicImage}
+   <p>             Lorem ipsum dolor sit amet
+    consectetur adipisicing elit.
+     Similique cumque fugit, corrupti odio 
+     ex eos provident reprehenderit expedita
+      exercitationem saepe dolor.
+      e  ex eos provident reprehenderit expedita
+      exercitationem saepe dolor.
+      ex eos provident reprehenderit expedita
+      exercitationem saepe dolor.
+       consectetur adipisicing elit. Quos illum ex ducimus quaerat
+        inventore officia blanditiis impedit suscipit,
+         unde nulla, porro magnam ex eos provident reprehenderit expedita
+         exercitationem saepe dolor.x eos provident reprehenderit expedita
+      exercitationem saepe dolor.
+       consectetur adipisicing elit. Quos illum ex ducimus quaerat
+        inventore officia blanditiis impedit suscipit,
+         unde nulla, porro magnam ex eos provident reprehenderit expedita
+         exercitationem saepe dolor.
+         
+          consectetur adipisicing elit. Quos illum ex ducimus quaerat
+           inventore officia blanditiis impedit suscipit,
+            unde nulla, porro magnam
+       consectetur adipisicing elit. Quos illum ex ducimus quaerat
+        inventore officia blanditiis impedit suscipit,
+         unde nulla, porro magnam
+          incidunt corporis quod 
+         repellat mollitia eum nesciunt! Sunt!</p>
+   <div class='popUpFooter'>
+   <button>See live</button>
+   <button>See source </button>
+   </div>
+  `;
+
+    divParent.appendChild(popUp);
+    const body = document.querySelector('body');
+    body.appendChild(divParent);
+    divParent.className = 'zzz';
+
+    //  for hiding popUp
+    const crossX = document.querySelector('.popUpHeader i');
+    crossX.addEventListener('click', () => {
+      body.removeChild(divParent);
+    });
+  });
 }
