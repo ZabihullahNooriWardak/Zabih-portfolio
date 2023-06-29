@@ -136,7 +136,15 @@ main {
   width: 30rem;
   border-bottom: 1px solid #6f6c6b;
 }
-
+.zzz {
+  background-color: rgb(0, 0, 0, 80%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
 .burger-menue ul li a {
   color: #fff5e1;
   width: 100%;
@@ -424,7 +432,67 @@ button.see {
   line-height: 24px;
   color: #fff;
 }
+.popUpHeader h1 {
+  font-size: 2.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.popUpHeader i {
+  font-size: 2.4rem;
+}
+.popUpParent {
+  padding: 2rem;
+  margin: 4rem 2rem;
+  width: 90%;
+  height: 93%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.popUpHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.popUpParent ul {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.popUpParent p {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  line-height: 2.4rem;
+}
+
+.popUpFooter button {
+  background-color: #ff6b00;
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.51px;
+  border: none;
+  padding: 0.7rem;
+  margin-right: 2rem;
+}
+.popUpParent ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.popUpParent img {
+  width: 90%;
+  height: 50%;
+}
 .data-dashbord button.see:hover {
   background-color: #fff5e1;
   color: #f55800;
