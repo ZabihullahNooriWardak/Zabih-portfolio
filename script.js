@@ -1,43 +1,43 @@
 // Dom manipulation For the burgerMenu
 
 // My Function For Dom manipulation of the burgerMenu
-const divBurgerMenueItem = document.querySelector(".burger-menue");
+const divBurgerMenueItem = document.querySelector('.burger-menue');
 
 const hiding = () => {
-  divBurgerMenueItem.style.display = "none";
+  divBurgerMenueItem.style.display = 'none';
 };
 
 // For showing the burger menu page
 
-const burgerMenu = document.querySelector(".bx-menu");
-burgerMenu.addEventListener("click", () => {
-  divBurgerMenueItem.style.display = "flex";
+const burgerMenu = document.querySelector('.bx-menu');
+burgerMenu.addEventListener('click', () => {
+  divBurgerMenueItem.style.display = 'flex';
 });
 
 // for hiding the burgerMenu page using X
 
-const cross = document.querySelector(".bx-x");
-cross.addEventListener("click", hiding);
+const cross = document.querySelector('.bx-x');
+cross.addEventListener('click', hiding);
 
 // for making the links in order to work
 
-const LiInMenu = document.getElementsByClassName("menue");
+const LiInMenu = document.getElementsByClassName('menue');
 for (let i = 0; i < LiInMenu.length; i += 1) {
-  LiInMenu[i].addEventListener("click", hiding);
+  LiInMenu[i].addEventListener('click', hiding);
 }
 
 // javascript for popUpCards
 
 const array = [
   {
-    title: " ",
-    description: " ",
-    technology: " ",
-    image: "images/professional.png",
+    title: ' ',
+    description: ' ',
+    technology: ' ',
+    image: 'images/professional.png',
     button: '  <button class="see">See project</button>',
   },
   {
-    title: "<h6>Data Dashbord <br />Healthcare</h6>",
+    title: '<h6>Data Dashbord <br />Healthcare</h6>',
     description: ` <p>
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -50,7 +50,7 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: " <h6>Website portfolio</h6> ",
+    title: ' <h6>Website portfolio</h6> ',
     description: ` <p>
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -63,7 +63,7 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: " <h6>Profesional Art <br />Printing Data More</h6>",
+    title: ' <h6>Profesional Art <br />Printing Data More</h6>',
     description: ` <p>
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -76,7 +76,7 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: "  <h6>Data Dashbord <br />Healthcare</h6>",
+    title: '  <h6>Data Dashbord <br />Healthcare</h6>',
     description: ` <p>
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -89,7 +89,7 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: "   <h6>Profesional Art <br />Printing Data More</h6>",
+    title: '   <h6>Profesional Art <br />Printing Data More</h6>',
     description: ` <p>
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -103,10 +103,10 @@ const array = [
   },
 ];
 const insertion = function (title, technology, description, button) {
-  const projectSection = document.querySelector(".projects-section");
-  const section = document.createElement("div");
+  const projectSection = document.querySelector('.projects-section');
+  const section = document.createElement('div');
   projectSection.appendChild(section);
-  section.className = "data-dashbord";
+  section.className = 'data-dashbord';
 
   section.innerHTML = `
 ${title}
@@ -123,55 +123,55 @@ for (let i = 0; i < 6; i += 1) {
     array[i].button
   );
   if (i === 0) {
-    const dataDash = document.querySelector(".data-dashbord");
+    const dataDash = document.querySelector('.data-dashbord');
     dataDash.style.background = `url(${array[i].image})`;
-    dataDash.style.paddingBottom = "0px";
-    const firstCardButton = document.querySelector(".data-dashbord button.see");
-    firstCardButton.style.display = "inline";
+    dataDash.style.paddingBottom = '0px';
+    const firstCardButton = document.querySelector('.data-dashbord button.see');
+    firstCardButton.style.display = 'inline';
   }
 }
 
-const buttonSee = document.querySelectorAll(".see");
+const buttonSee = document.querySelectorAll('.see');
 for (let i = 0; i < 7; i += 1) {
-  buttonSee[i].addEventListener("click", () => {
-    let dynmicTitle = "";
+  buttonSee[i].addEventListener('click', () => {
+    let dynmicTitle = '';
     let dynamicImage = " <img src='images/availiability.png'>";
     switch (i) {
       case 2:
-        dynmicTitle = "Data Dashbord HealthCare";
+        dynmicTitle = 'Data Dashbord HealthCare';
         dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 3:
-        dynmicTitle = "Website portfolio";
+        dynmicTitle = 'Website portfolio';
         dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 4:
-        dynmicTitle = "Professional Art Printing Data More";
+        dynmicTitle = 'Professional Art Printing Data More';
         dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 5:
-        dynmicTitle = "Data Dashbord HealthCare";
+        dynmicTitle = 'Data Dashbord HealthCare';
         dynamicImage = " <img src='images/availiability.png'>";
         break;
       case 6:
-        dynmicTitle = "Professional Art Printing Data More";
+        dynmicTitle = 'Professional Art Printing Data More';
         dynamicImage = "<img src='images/availiability.png'>";
         break;
       case 0:
-        dynmicTitle = "Multi-post Stories";
+        dynmicTitle = 'Multi-post Stories';
         dynamicImage = "<img src='images/woman.png'>";
         break;
       case 1:
-        dynmicTitle = "Professional Art Printing Printing Data";
+        dynmicTitle = 'Professional Art Printing Printing Data';
         dynamicImage = '   <img src="images/professional.png">';
         break;
       default:
-        dynamicImage = "no image";
-        dynmicTitle = "no title";
+        dynamicImage = 'no image';
+        dynmicTitle = 'no title';
     }
-    const divParent = document.createElement("div");
-    const popUp = document.createElement("div");
-    popUp.className = "popUpParent";
+    const divParent = document.createElement('div');
+    const popUp = document.createElement('div');
+    popUp.className = 'popUpParent';
     popUp.innerHTML = `
    <div class='popUpHeader'>
    <h1>${dynmicTitle}</h1>
@@ -217,30 +217,29 @@ ${dynamicImage}
   `;
 
     divParent.appendChild(popUp);
-    const body = document.querySelector("body");
+    const body = document.querySelector('body');
     body.appendChild(divParent);
-    divParent.className = "zzz";
+    divParent.className = 'zzz';
 
     //  for hiding popUp
-    const crossX = document.querySelector(".popUpHeader i");
-    crossX.addEventListener("click", () => {
+    const crossX = document.querySelector('.popUpHeader i');
+    crossX.addEventListener('click', () => {
       body.removeChild(divParent);
     });
   });
 
   // javascript for the validating email input field.
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function (event) {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function (event) {
     event.preventDefault();
-    const emailField = document.getElementById("email");
-    const isEmailValid = emailField.value.trim() !== "";
-    const isEmailToLowerCase =
-      emailField.value === emailField.value.toLowerCase();
+    const emailField = document.getElementById('email');
+    const isEmailValid = emailField.value.trim() !== '';
+    const isEmailToLowerCase = emailField.value === emailField.value.toLowerCase();
     if (isEmailValid && isEmailToLowerCase) {
-      document.querySelector("form p").style.display = "none";
+      document.querySelector('form p').style.display = 'none';
       this.submit();
     } else {
-      document.querySelector("form p").style.display = "inline";
+      document.querySelector('form p').style.display = 'inline';
     }
   });
 }
