@@ -679,10 +679,6 @@ div.skills ul img {
   margin-right: 1rem;
 }
 
-footer .hidden {
-  display: none;
-}
-
 footer textarea {
   color: #3c3a39;
   font-family: "Inter", sans-serif;
@@ -864,15 +860,6 @@ hr#last {
 
   .MainParagraph h3:first-of-type {
     font-size: 3.2rem;
-  }
-
-  .shown {
-    display: none;
-  }
-
-  footer .hidden {
-    display: inline;
-    width: 40%;
   }
 
   hr#last {
