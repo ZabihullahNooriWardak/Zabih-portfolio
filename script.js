@@ -120,7 +120,7 @@ for (let i = 0; i < 6; i += 1) {
     array[i].title,
     array[i].technology,
     array[i].description,
-    array[i].button
+    array[i].button,
   );
   if (i === 0) {
     const dataDash = document.querySelector('.data-dashbord');
