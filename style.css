@@ -171,6 +171,12 @@ main {
   font-size: 3.5rem;
 }
 
+form p {
+  color: red;
+  font-size: 1.5rem;
+  display: none;
+}
+
 .MainParagraph h1,
 .MainParagraph h3,
 .MainParagraph p {
@@ -753,7 +759,6 @@ hr#last {
   }
 
   .popUpParent {
-    /* width:90%; */
     height: 90%;
     display: grid;
     gap: 10px;
