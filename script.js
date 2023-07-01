@@ -269,10 +269,11 @@ function localStorageMine() {
     console.log('error occured while storing data to localStorage');
   }
 }
-
-window.onload = () => {
-  localStorageMine();
-};
+// when the user leave the fields the changes are saved automatically.
+const allInputs = document.getElementsByClassName('input');
+for (let i = 0; i < 3; i += 1) {
+  allInputs[i].addEventListener('blur', localStorageMine);
+}
 
 // javascript for the validating email input field.
 const form = document.querySelector('form');
