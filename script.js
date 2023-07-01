@@ -247,9 +247,9 @@ ${dynamicImage}
 // Javascript for the local storage
 const userDataInLocalStorage = localStorage.getItem('userData');
 const parsedData = JSON.parse(userDataInLocalStorage);
-document.getElementById('fullName').value = parsedData.name;
-document.getElementById('email').value = parsedData.email;
-document.getElementById('textArea').value = parsedData.comment;
+document.getElementById('fullName').value = parsedData['name'];
+document.getElementById('email').value = parsedData['email'];
+document.getElementById('textArea').value = parsedData['comment'];
 function localStorageMine() {
   const userName = document.getElementById('fullName');
   const userEmail = document.getElementById('email');
@@ -269,8 +269,6 @@ function localStorageMine() {
     console.log('error occured while storing data to localStorage');
   }
 }
-
-// console.log(localStorage.getItem('userData'));
 
 // javascript for the validating email input field.
 const form = document.querySelector('form');
