@@ -105,10 +105,9 @@ to run this project you need Google chrome or other browser
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-  In the Future the project will be these features 
-
-- [ ] **[my_all_project_links]**
-- [ ] **[Footer]**
+ - integration with javascript
+ - Adding more html content
+ - Adding links to my projects
 
 <!-- CONTRIBUTING -->
 
