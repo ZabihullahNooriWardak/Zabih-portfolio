@@ -270,6 +270,10 @@ function localStorageMine() {
   }
 }
 
+window.onload = () => {
+  localStorageMine();
+};
+
 // javascript for the validating email input field.
 const form = document.querySelector('form');
 form.addEventListener('submit', function (event) {
@@ -279,7 +283,6 @@ form.addEventListener('submit', function (event) {
   const isEmailToLowerCase = emailField.value === emailField.value.toLowerCase();
   if (isEmailValid && isEmailToLowerCase) {
     document.querySelector('form p').style.display = 'none';
-    localStorageMine();
     this.submit();
   } else {
     document.querySelector('form p').style.display = 'inline';
