@@ -243,3 +243,52 @@ ${dynamicImage}
     }
   });
 }
+
+// Javascript for the local storage
+window.onload = () => {
+  const userDataInLocalStorage = localStorage.getItem('userData');
+  const parsedData = JSON.parse(userDataInLocalStorage);
+  document.getElementById('fullName').value = parsedData.name ?? ' ';
+  document.getElementById('email').value = parsedData.email ?? ' ';
+  document.getElementById('textArea').value = parsedData.comment ?? ' ';
+};
+
+function localStorageMine() {
+  const userName = document.getElementById('fullName');
+  const userEmail = document.getElementById('email');
+  const userComment = document.getElementById('textArea');
+  const uname = userName.value ?? ' ';
+  const email = userEmail.value ?? ' ';
+  const comment = userComment.value ?? ' ';
+  const inputFieldObject = {
+    name: uname,
+    email,
+    comment,
+  };
+  try {
+    const forLocalStorage = JSON.stringify(inputFieldObject);
+    window.localStorage.setItem('userData', forLocalStorage);
+  } catch (e) {
+    console.log('error occured while storing data to localStorage');
+  }
+}
+// when the user leave the fields the changes are saved automatically.
+const allInputs = document.getElementsByClassName('input');
+for (let i = 0; i < 3; i += 1) {
+  allInputs[i].addEventListener('input', localStorageMine);
+}
+
+// javascript for the validating email input field.
+const form = document.querySelector('form');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const emailField = document.getElementById('email');
+  const isEmailValid = emailField.value.trim() !== '';
+  const isEmailToLowerCase = emailField.value === emailField.value.toLowerCase();
+  if (isEmailValid && isEmailToLowerCase) {
+    document.querySelector('form p').style.display = 'none';
+    this.submit();
+  } else {
+    document.querySelector('form p').style.display = 'inline';
+  }
+});
