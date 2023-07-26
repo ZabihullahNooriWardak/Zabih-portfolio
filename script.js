@@ -33,7 +33,7 @@ const array = [
     title: ' ',
     description: ' ',
     technology: ' ',
-    image: 'images/professional.png',
+    image: 'images/Todo2.png',
     button: '  <button class="see">See project</button>',
   },
   {
@@ -163,7 +163,7 @@ for (let i = 0; i < 7; i += 1) {
         break;
       case 1:
         dynmicTitle = 'Professional Art Printing Printing Data';
-        dynamicImage = '   <img src="images/professional.png">';
+        dynamicImage = '   <img src="images/Todo2.png">';
         break;
       default:
         dynamicImage = 'no image';
@@ -211,8 +211,8 @@ ${dynamicImage}
           incidunt corporis quod 
          repellat mollitia eum nesciunt! Sunt!</p>
    <div class='popUpFooter'>
-   <button>See live</button>
-   <button>See source </button>
+   <button><a href='https://zabihullahnooriwardak.github.io/brandNewTodoApp/dist/'>See live</a></button>
+   <button><a href = 'https://github.com/ZabihullahNooriWardak/brandNewTodoApp#live-demo'>See source</a> </button>
    </div>
   `;
 
