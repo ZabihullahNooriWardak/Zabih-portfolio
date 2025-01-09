@@ -429,6 +429,10 @@ footer button {
   padding: 1rem 3rem;
 }
 
+.popUpFooter button a{
+  text-decoration: none;
+  color: white;
+}
 div.see button {
   width: 100%;
   height: 5.8rem;
