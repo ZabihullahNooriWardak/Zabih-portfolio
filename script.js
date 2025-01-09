@@ -292,3 +292,10 @@ form.addEventListener('submit', function (event) {
     document.querySelector('form p').style.display = 'inline';
   }
 });
+
+document.getElementById("ccc").addEventListener("click", function(){
+  const pdfPath = 'images/resume.pdf';
+  const link = document.createElement('a');
+  link.href = pdfPath;
+  link.click();
+});
