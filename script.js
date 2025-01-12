@@ -164,23 +164,24 @@ for (let i = 0; i < 7; i += 1) {
         dynmicTitle = 'Uzbek to Persian Dictionary';
         dynamicImage = "<img src='images/newnewdic.jpg'>";
         dynamicTechnologyStack = ['Dart', 'Flutter', 'SqfLite', 'Provider'];
-        dynamicDetails= "Comprehensive Dictionary :"+
-" Contains thousands of Uzbek and Persian words with accurate translations and meanings."+
-"Includes synonyms, antonyms, and usage examples."+
-" Offline Mode:Translate words and phrases without an internet connection. Perfect for on-the-go use."+
-" Favorites and History:Save frequently used words and phrases in the Favorites list.Access your translation history anytime."
+        dynamicDetails = "Comprehensive Dictionary :" +
+          " Contains thousands of Uzbek and Persian words with accurate translations and meanings." +
+          "Includes synonyms, antonyms, and usage examples." +
+          " Offline Mode:Translate words and phrases without an internet connection. Perfect for on-the-go use." +
+          " Favorites and History:Save frequently used words and phrases in the Favorites list.Access your translation history anytime.";
+          dynamicLinks = ['https://t.me/zabihN/34','privateRepository.html'];
         break;
       case 1:
         dynmicTitle = 'Task List taking Website';
         dynamicImage = '   <img src="images/Todo2.png">';
-        dynamicDetails = "Make productivity a lifestyle with this To-Do App."+
-        " Embrace a well-organized and structured routine,"+
-        "stay focused, and achieve your goals with ease."+
-        " Whether it's a personal project, a work-related task, or anything in between,"+
-        " this app empowers you to take control of your tasks and conquer your ambitions.";
+        dynamicDetails = "Make productivity a lifestyle with this To-Do App." +
+          " Embrace a well-organized and structured routine," +
+          "stay focused, and achieve your goals with ease." +
+          " Whether it's a personal project, a work-related task, or anything in between," +
+          " this app empowers you to take control of your tasks and conquer your ambitions.";
         dynamicTechnologyStack = ['HTML', 'CSS', 'JavaScript'];
-        dynamicLinks = ['https://zabihullahnooriwardak.github.io/brandNewTodoApp/dist/','https://github.com/ZabihullahNooriWardak/brandNewTodoApp#live-demo']
-        
+        dynamicLinks = ['https://zabihullahnooriwardak.github.io/brandNewTodoApp/dist/', 'https://github.com/ZabihullahNooriWardak/brandNewTodoApp#live-demo']
+
         break;
       default:
         dynamicImage = 'no image';
@@ -195,12 +196,7 @@ for (let i = 0; i < 7; i += 1) {
    <i class='bx bx-x'></i>
    </div>
    <ul>
-  <li>${dynamicTechnologyStack[0]}</li>
-    <li>${dynamicTechnologyStack[1]}</li>
-   <li>${dynamicTechnologyStack[2]}</li>
-
-  
-
+    ${dynamicTechnologyStack.map((item) => `<li>${item}</li>`)}
    </ul>
 ${dynamicImage}
    <p>${dynamicDetails}</p>
@@ -287,7 +283,7 @@ form.addEventListener('submit', function (event) {
   }
 });
 
-document.getElementById("ccc").addEventListener("click", function(){
+document.getElementById("ccc").addEventListener("click", function () {
   const pdfPath = 'images/resume.pdf';
   const link = document.createElement('a');
   link.href = pdfPath;
