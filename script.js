@@ -138,6 +138,7 @@ for (let i = 0; i < 7; i += 1) {
     let dynamicTechnologyStack = [];
     let dynamicDetails = '';
     let dynamicImage = " <img src='images/availiability.png'>";
+    let dynamicLinks = [];
     switch (i) {
       case 2:
         dynmicTitle = 'Data Dashbord HealthCare';
@@ -178,6 +179,7 @@ for (let i = 0; i < 7; i += 1) {
         " Whether it's a personal project, a work-related task, or anything in between,"+
         " this app empowers you to take control of your tasks and conquer your ambitions.";
         dynamicTechnologyStack = ['HTML', 'CSS', 'JavaScript'];
+        dynamicLinks = ['https://zabihullahnooriwardak.github.io/brandNewTodoApp/dist/','https://github.com/ZabihullahNooriWardak/brandNewTodoApp#live-demo']
         
         break;
       default:
@@ -193,15 +195,18 @@ for (let i = 0; i < 7; i += 1) {
    <i class='bx bx-x'></i>
    </div>
    <ul>
-   <li>${dynamicTechnologyStack[0]}</li>
-   <li>${dynamicTechnologyStack[1]}</li>
+  <li>${dynamicTechnologyStack[0]}</li>
+    <li>${dynamicTechnologyStack[1]}</li>
    <li>${dynamicTechnologyStack[2]}</li>
+
+  
+
    </ul>
 ${dynamicImage}
    <p>${dynamicDetails}</p>
    <div class='popUpFooter'>
-   <button><a href='https://zabihullahnooriwardak.github.io/brandNewTodoApp/dist/'>See live</a></button>
-   <button><a href = 'https://github.com/ZabihullahNooriWardak/brandNewTodoApp#live-demo'>See source</a> </button>
+   <button><a href= ${dynamicLinks[0]}>See live</a></button>
+   <button><a href = ${dynamicLinks[1]}>See source</a> </button>
    </div>
   `;
 
