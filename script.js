@@ -56,24 +56,24 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: '<h6>Task List Taking Website</h6>',
+    title: '<h6>Note Application For Android</h6>',
     description: ` <p>
-   Make productivity a lifestyle with this To-Do App. Embrace a well-organized and structured routine, stay focused, and achieve your goals with ease.
+   Capture and organize your ideas effortlessly with our powerful, user-friendly note-taking app, it offers advanced authentication, and a clean, distraction-free interface. 
   </p>`,
     technology: `  <ul class="button">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
+    <li>Dart</li>
+    <li>Flutter</li>
+    <li>Provider</li>
   </ul>`,
-    image: 'images/Todo2.png',
+    image: 'images/noteapp.jpg',
     button: '  <button class="see">See project</button>',
   },
   {
-    title: '<h6>ChatGPT <br />Conference</h6>',
+    title: '<h6>Awesome Book</h6>',
     description: ` <p>
-   The ChatGPT Conference Website is dedicated to a conference website focused on exploring the capabilities, advancements, and real-world applications of ChatGPT, an AI-powered language model. 
+  The Awesome Book is a user-friendly project that provides a seamless way for users to manage their collection of books 
   </p>`,
-    image: 'images/chatgpt.png',
+    image: 'images/awesomebook.png',
     technology: `  <ul class="button">
     <li>HTML</li>
     <li>CSS</li>
@@ -82,16 +82,16 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: '<h6>Task List Taking Website</h6>',
+    title: '<h6>Math Magician</h6>',
     description: ` <p>
-   Make productivity a lifestyle with this To-Do App. Embrace a well-organized and structured routine, stay focused, and achieve your goals with ease.
+   Math-Magicians" is a React-based project with the calculator the have math operations and also display some useful Quotes on the page.
   </p>`,
     technology: `  <ul class="button">
     <li>HTML</li>
     <li>CSS</li>
-    <li>JavaScript</li>
+    <li>React</li>
   </ul>`,
-    image: 'images/Todo2.png',
+    image: 'images/math.png',
     button: '  <button class="see">See project</button>',
   },
   {
@@ -149,16 +149,25 @@ for (let i = 0; i < 7; i += 1) {
         dynamicLinks = ['https://zabihullahnooriwardak.github.io/ChatGPt-conference/', 'https://github.com/ZabihullahNooriWardak/ChatGPt-conference'];
         break;
       case 3:
-        dynmicTitle = 'Website portfolio';
-        dynamicImage = " <img src='images/availiability.png'>";
+        dynmicTitle = 'Note Application For Android';
+        dynamicImage = " <img src='images/noteapp.jpg'>";
+        dynamicTechnologyStack = ['Dart', 'Flutter', 'LocalAuth,Sqflite'];
+        dynamicDetails = "Capture and organize your ideas effortlessly with our powerful, user-friendly note-taking app. Designed for both quick notes and detailed documents, it offers advanced authentication using biometric like fingerprint or faceID, and a clean, distraction-free interface.";
+        dynamicLinks = ['https://t.me/zabihN/4', 'privateRepository.html'];
         break;
       case 4:
-        dynmicTitle = 'Professional Art Printing Data More';
-        dynamicImage = " <img src='images/availiability.png'>";
+        dynmicTitle = 'Awesome Book';
+        dynamicImage = " <img src='images/awesomebook.png'>";
+        dynamicTechnologyStack = ['HTML', 'CSS', 'JavaScript'];
+        dynamicDetails = " The Awesome Book is a user-friendly project that provides a seamless way for users to manage their collection of books by storing book names and author names locally using the browser's . With its beautiful UI and intuitive features, the application offers an enjoyable book management experience for users. and this project is developed using JS.";
+        dynamicLinks = ['https://zabihullahnooriwardak.github.io/AwesomeBook/', 'https://github.com/ZabihullahNooriWardak/AwesomeBook'];
         break;
       case 5:
-        dynmicTitle = 'Data Dashbord HealthCare';
-        dynamicImage = " <img src='images/availiability.png'>";
+        dynmicTitle = 'Math Magician';
+        dynamicImage = " <img src='images/math.png'>";
+        dynamicTechnologyStack = ['HTML', 'CSS', 'React'];
+        dynamicDetails = "Math-Magicians is a React-based project with the calculator the have math operations and also display some useful Quotes on the page.";
+        dynamicLinks = ['https://mathmagicians-ead4.onrender.com/', 'https://github.com/ZabihullahNooriWardak/Math-Magicians'];
         break;
       case 6:
         dynmicTitle = 'Professional Art Printing Data More';
