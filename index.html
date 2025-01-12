@@ -19,17 +19,28 @@
     />
   </head>
   <body>
+    <!-- Burger menu items -->
+    <div class="burger-menue">
+      <i class='bx bx-x'></i>
+      <ul>
+        <li class="menue"><a href="#project-section">Portfolio</a></li>
+        <li class="menue"><a href="#about-me">About</a></li>
+        <li class="menue"><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+
+
     <!-- Header Starts -->
     <header>
       <span>Zabih Noori</span>
       <nav class="menu" id="menu">
         <ul>
-          <li><a href="#projects-section">Portfolio</a></li>
+          <li><a href="#project-section">Portfolio</a></li>
           <li><a href="#about-me">About</a></li>
           <li><a href="#footer">Contact</a></li>
           <li>
             <a href="mailto:zabinoori712@gmail.com"
-              ><i class="bx bx-envelope"></i
+              ><i class="bx bx-envelope envelop"></i
             ></a>
           </li>
         </ul>
@@ -40,38 +51,36 @@
 
     <!-- Hero Section Starts -->
     <main>
-      <div class="desktop-icons">
-        <ul>
-          <li>
-            <a href="https://github.com/ZabihullahNooriWardak"
-              ><i class="bx bxl-github"> </i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/zabi-noori-aa59a924a/"
-              ><i class="bx bxl-linkedin"> </i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100030667175644"
-              ><i class="fa-regular fa-hand-peace"> </i
-            ></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/ZabiNoo31954752"
-              ><i class="bx bxl-twitter"> </i
-            ></a>
-          </li>
-          <li>
-            <a href="mailto:zabinoori712@gmail.com"
-              ><i class="bx bxl-gmail"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <a href="https://github.com/ZabihullahNooriWardak"
+            ><i class="bx bxl-github"> </i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/zabi-noori-aa59a924a/"
+            ><i class="bx bxl-linkedin"> </i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100030667175644"
+            ><i class="fa-regular fa-hand-peace"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ZabiNoo31954752"
+            ><i class="bx bxl-twitter"> </i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:zabinoori712@gmail.com"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+        </li>
+      </ul>
       <div class="MainParagraph">
-        <h1>Hey There. <br />I'm Zabih</h1>
-        <p>I'm a Software Developer</p>
+        <h1>Hey There. <br />I'm Zabihullah</h1>
+        <h3>I'm a Software Developer</h3>
         <p id="second-paragraph">
           I can help you build a product , feature or website Look through some
           of my work and experience! If you like what you see and have a project
@@ -108,114 +117,42 @@
         </ul>
       </div>
       <div class="image">
-        <img src="images/desktopSidebar.png" alt="imgage not loaded" />
+        <img
+          src="images/desktopSidebar.png"
+          alt="Zabih's Sidebar Portfolio Image"
+        />
       </div>
-      <img id="mobile" src="images/image.png" alt="" />
+      <img
+        id="mobile"
+        src="images/image.png"
+        alt="Zabih's Mobile Portfolio Image"
+      />
     </main>
     <!-- Hero Section Ends -->
 
     <!-- projects Section Starts -->
-    <section id="projects-section">
-      <div class="project-first">
-        <h4>My Recent Works</h4>
-        <hr />
+    <section class="projects-section" id="project-section">
+      <h4>My Recent Works</h4>
+      <hr />
+      <img src="images/woman.png" alt="Image of GymFit Project" />
+      <div class="multi-post-story">
+        <h6>Uzbek to Persian Dictionary</h6>
+        <p id="second">
+          The Uzbek to Persian Dictionary app is a powerful language
+           learning and translation tool designed to bridge the gap 
+           between Uzbek and Persian speakers. Whether you’re
+            a student, traveler, or professional, this app makes
+             communication and language comprehension effortless.
+        </p>
+        <div class="buttons">
+          <button class="css">Dart</button>
+          <button class="html">Flutter</button>
+          <button class="bootstrap">SqfLite</button>
+          <button class="ruby">Provider</button>
+        </div>
+        <button class="change see">See project</button>
       </div>
-      <div class="project-second">
-        <img src="images/woman.png" alt="image not loaded" />
-        <div class="multi-post-story">
-          <p>Mult-Post Stories</p>
-          <p id="second">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. This has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard dummy
-            text.
-          </p>
-          <div class="buttons">
-            <button class="css">CSS</button>
-            <button class="html">HTML</button>
-            <button class="bootstrap">Bootstrap</button>
-            <button class="ruby">Ruby</button>
-          </div>
-          <button class="change">See project</button>
-        </div>
-      </div>
-      <div class="container-projects-grid">
-        <div class="see">
-          <button class="change">See project</button>
-        </div>
-
-        <div class="data-dashbord">
-          <h4>Data Dashbord <br />Healthcare</h4>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="button">
-            <li><button>HTML</button></li>
-            <li><button>Bootstrap</button></li>
-            <li>
-              <button>Ruby</button>
-            </li>
-          </ul>
-          <button class="see">See project</button>
-        </div>
-        <div class="data-dashbord">
-          <h4>Website portfolio</h4>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="button">
-            <li><button class="html">HTML</button></li>
-            <li><button>Bootstrap</button></li>
-            <li><button>Ruby</button></li>
-          </ul>
-          <button class="see">See project</button>
-        </div>
-        <div class="data-dashbord">
-          <h4>Profesional Art <br />Printing Data More</h4>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="button">
-            <li><button class="html">HTML</button></li>
-            <li>
-              <button>Bootstrap</button>
-            </li>
-            <li><button>Ruby</button></li>
-          </ul>
-          <button class="see">See project</button>
-        </div>
-        <div class="data-dashbord">
-          <h4>Data Dashbord <br />Healthcare</h4>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="button">
-            <li><button class="html">HTML</button></li>
-            <li><button>Bootstrap</button></li>
-            <li>
-              <button>Ruby</button>
-            </li>
-          </ul>
-          <button class="see">See project</button>
-        </div>
-        <div class="data-dashbord">
-          <h4>Profesional Art <br />Printing Data More</h4>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="button">
-            <li><button class="html">HTML</button></li>
-            <li><button>Bootstrap</button></li>
-            <li><button>Ruby</button></li>
-          </ul>
-          <button class="see">See project</button>
-        </div>
-      </div>
+     
     </section>
     <!-- Project section Ends -->
 
@@ -223,7 +160,7 @@
     <section class="about-me" id="about-me">
       <div class="container">
         <div class="about-me">
-          <h4>About me</h4>
+          <h3>About me</h3>
           <p>
             Hey there! I can help you build a product, feature or website. Look
             through some of my work and experience! If you like what you see and
@@ -236,21 +173,27 @@
       <hr />
       <div class="skills">
         <ul>
-          <li><img src="images/Rectangle 55.png" alt="" />Language</li>
+          <h4>
+            <img src="images/Rectangle 55.png" alt="Bullet Point" />Languages
+          </h4>
           <li>JavaScript</li>
           <li>Dart</li>
           <li>HTML</li>
           <li>CSS</li>
         </ul>
         <ul>
-          <li><img src="images/Rectangle 56.png" alt="" />Framworks</li>
+          <h4>
+            <img src="images/Rectangle 56.png" alt="Bullet Point" />Frameworks
+          </h4>
           <li>React.js</li>
           <li>Flutter</li>
           <li>Capybara</li>
           <li>Selenium</li>
         </ul>
         <ul>
-          <li><img src="images/Rectangle 57.png" alt="" />Skills</li>
+          <h4>
+            <img src="images/Rectangle 57.png" alt="Bullet Point" />Skills
+          </h4>
           <li>Version Control</li>
           <li>CLI</li>
           <li>Database Management</li>
@@ -264,26 +207,54 @@
     <!-- Footer Starts -->
     <footer id="footer">
       <div class="container-footer">
-        <p>
+        <h4>
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
-        </p>
-        <div class="details">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" /><br />
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Email Address" /><br />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Write me something..."
-          ></textarea
-          ><br />
-          <button class="change">Get in touch</button>
-        </div>
+        </h4>
+        <form action="https://formspree.io/f/xvoneaew" method="post">
+          <div class="details">
+            <label for="fullName">
+              <input
+              class="input"
+                type="text"
+                name="FullName"
+                id="fullName"
+                required
+                maxlength="30"
+                placeholder="Full name"
+              />
+            </label>
+            <label for="email">
+              <input
+              class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <p>email is not in lower case</p>
+            </label>
+            <br />
+            <label for="textArea">
+              <textarea
+              class="input"
+                name="message"
+                id="textArea"
+                cols="30"
+                rows="10"
+                placeholder="Write me something..."
+                maxlength="500"
+                required
+              ></textarea>
+            </label>
+            <br />
+            <button class="change" type="submit">Get in touch</button>
+          </div>
+        </form>
       </div>
+    </footer>
+    <div class="behind-footer">
       <hr />
       <ul>
         <li>
@@ -313,6 +284,7 @@
         </li>
       </ul>
       <hr id="last" />
-    </footer>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
