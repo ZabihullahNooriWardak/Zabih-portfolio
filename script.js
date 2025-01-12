@@ -178,7 +178,7 @@ for (let i = 0; i < 7; i += 1) {
    <i class='bx bx-x'></i>
    </div>
    <ul>
-   <li>HTML</li>
+   <li>Dart</li>
    <li>Bootstrap</li>
    <li>Ruby on Rails</li>
    </ul>
