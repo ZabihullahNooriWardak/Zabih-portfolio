@@ -158,8 +158,8 @@ for (let i = 0; i < 7; i += 1) {
         dynamicImage = "<img src='images/availiability.png'>";
         break;
       case 0:
-        dynmicTitle = 'Multi-post Stories';
-        dynamicImage = "<img src='images/woman.png'>";
+        dynmicTitle = 'Uzbek to Persian Dictionary';
+        dynamicImage = "<img src='images/newnewdic.jpg'>";
         break;
       case 1:
         dynmicTitle = 'Professional Art Printing Printing Data';
