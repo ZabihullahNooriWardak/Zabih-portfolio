@@ -135,6 +135,8 @@ const buttonSee = document.querySelectorAll('.see');
 for (let i = 0; i < 7; i += 1) {
   buttonSee[i].addEventListener('click', () => {
     let dynmicTitle = '';
+    let dynamicTechnologyStack = [];
+    let dynamicDetails = '';
     let dynamicImage = " <img src='images/availiability.png'>";
     switch (i) {
       case 2:
@@ -160,10 +162,23 @@ for (let i = 0; i < 7; i += 1) {
       case 0:
         dynmicTitle = 'Uzbek to Persian Dictionary';
         dynamicImage = "<img src='images/newnewdic.jpg'>";
+        dynamicTechnologyStack = ['Dart', 'Flutter', 'SqfLite', 'Provider'];
+        dynamicDetails= "Comprehensive Dictionary :"+
+" Contains thousands of Uzbek and Persian words with accurate translations and meanings."+
+"Includes synonyms, antonyms, and usage examples."+
+" Offline Mode:Translate words and phrases without an internet connection. Perfect for on-the-go use."+
+" Favorites and History:Save frequently used words and phrases in the Favorites list.Access your translation history anytime."
         break;
       case 1:
-        dynmicTitle = 'Professional Art Printing Printing Data';
+        dynmicTitle = 'Task List taking Website';
         dynamicImage = '   <img src="images/Todo2.png">';
+        dynamicDetails = "Make productivity a lifestyle with this To-Do App."+
+        " Embrace a well-organized and structured routine,"+
+        "stay focused, and achieve your goals with ease."+
+        " Whether it's a personal project, a work-related task, or anything in between,"+
+        " this app empowers you to take control of your tasks and conquer your ambitions.";
+        dynamicTechnologyStack = ['HTML', 'CSS', 'JavaScript'];
+        
         break;
       default:
         dynamicImage = 'no image';
@@ -178,38 +193,12 @@ for (let i = 0; i < 7; i += 1) {
    <i class='bx bx-x'></i>
    </div>
    <ul>
-   <li>Dart</li>
-   <li>Bootstrap</li>
-   <li>Ruby on Rails</li>
+   <li>${dynamicTechnologyStack[0]}</li>
+   <li>${dynamicTechnologyStack[1]}</li>
+   <li>${dynamicTechnologyStack[2]}</li>
    </ul>
 ${dynamicImage}
-   <p>             Lorem ipsum dolor sit amet
-    consectetur adipisicing elit.
-     Similique cumque fugit, corrupti odio 
-     ex eos provident reprehenderit expedita
-      exercitationem saepe dolor.
-      e  ex eos provident reprehenderit expedita
-      exercitationem saepe dolor.
-      ex eos provident reprehenderit expedita
-      exercitationem saepe dolor.
-       consectetur adipisicing elit. Quos illum ex ducimus quaerat
-        inventore officia blanditiis impedit suscipit,
-         unde nulla, porro magnam ex eos provident reprehenderit expedita
-         exercitationem saepe dolor.x eos provident reprehenderit expedita
-      exercitationem saepe dolor.
-       consectetur adipisicing elit. Quos illum ex ducimus quaerat
-        inventore officia blanditiis impedit suscipit,
-         unde nulla, porro magnam ex eos provident reprehenderit expedita
-         exercitationem saepe dolor.
-         
-          consectetur adipisicing elit. Quos illum ex ducimus quaerat
-           inventore officia blanditiis impedit suscipit,
-            unde nulla, porro magnam
-       consectetur adipisicing elit. Quos illum ex ducimus quaerat
-        inventore officia blanditiis impedit suscipit,
-         unde nulla, porro magnam
-          incidunt corporis quod 
-         repellat mollitia eum nesciunt! Sunt!</p>
+   <p>${dynamicDetails}</p>
    <div class='popUpFooter'>
    <button><a href='https://zabihullahnooriwardak.github.io/brandNewTodoApp/dist/'>See live</a></button>
    <button><a href = 'https://github.com/ZabihullahNooriWardak/brandNewTodoApp#live-demo'>See source</a> </button>
