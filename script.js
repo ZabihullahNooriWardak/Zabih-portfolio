@@ -30,22 +30,28 @@ for (let i = 0; i < LiInMenu.length; i += 1) {
 
 const array = [
   {
-    title: ' ',
-    description: ' ',
-    technology: ' ',
+    title: '<h6>Task List Taking Website</h6>',
+    description: ` <p>
+   Make productivity a lifestyle with this To-Do App. Embrace a well-organized and structured routine, stay focused, and achieve your goals with ease.
+  </p>`,
+    technology: `  <ul class="button">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>`,
     image: 'images/Todo2.png',
     button: '  <button class="see">See project</button>',
   },
   {
-    title: '<h6>Data Dashbord <br />Healthcare</h6>',
+    title: '<h6>ChatGPT <br />Conference</h6>',
     description: ` <p>
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. Has been the industry's standard.
+   The ChatGPT Conference Website is dedicated to a conference website focused on exploring the capabilities, advancements, and real-world applications of ChatGPT, an AI-powered language model. 
   </p>`,
+    image: 'images/chatgpt.png',
     technology: `  <ul class="button">
     <li>HTML</li>
-    <li>Bootstrap</li>
-    <li>Ruby</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>`,
     button: '  <button class="see">See project</button>',
   },
@@ -102,12 +108,12 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
 ];
-const insertion = function (title, technology, description, button) {
+const insertion = function (title, technology, description, button, image) {
   const projectSection = document.querySelector('.projects-section');
   const section = document.createElement('div');
   projectSection.appendChild(section);
   section.className = 'data-dashbord';
-
+  section.style.backgroundImage = `url(${image})`;
   section.innerHTML = `
 ${title}
  ${description}
@@ -121,14 +127,9 @@ for (let i = 0; i < 6; i += 1) {
     array[i].technology,
     array[i].description,
     array[i].button,
+    array[i].image,
   );
-  if (i === 0) {
-    const dataDash = document.querySelector('.data-dashbord');
-    dataDash.style.background = `url(${array[i].image})`;
-    dataDash.style.paddingBottom = '0px';
-    const firstCardButton = document.querySelector('.data-dashbord button.see');
-    firstCardButton.style.display = 'inline';
-  }
+
 }
 
 const buttonSee = document.querySelectorAll('.see');
@@ -141,8 +142,11 @@ for (let i = 0; i < 7; i += 1) {
     let dynamicLinks = [];
     switch (i) {
       case 2:
-        dynmicTitle = 'Data Dashbord HealthCare';
-        dynamicImage = " <img src='images/availiability.png'>";
+        dynmicTitle = 'ChatGPT Conference';
+        dynamicImage = "<img src='images/chatgpt.png'>";
+        dynamicTechnologyStack = ['HTML', 'CSS', 'JavaScript'];
+        dynamicDetails = " The ChatGPT Conference Website is dedicated to a conference website focused on exploring the capabilities, advancements, and real-world applications of ChatGPT, an AI-powered language model. The web page serves as a central hub for attendees, speakers, and sponsors to access event information, participate in sessions.";
+        dynamicLinks = ['https://zabihullahnooriwardak.github.io/ChatGPt-conference/', 'https://github.com/ZabihullahNooriWardak/ChatGPt-conference'];
         break;
       case 3:
         dynmicTitle = 'Website portfolio';
@@ -169,7 +173,7 @@ for (let i = 0; i < 7; i += 1) {
           "Includes synonyms, antonyms, and usage examples." +
           " Offline Mode:Translate words and phrases without an internet connection. Perfect for on-the-go use." +
           " Favorites and History:Save frequently used words and phrases in the Favorites list.Access your translation history anytime.";
-          dynamicLinks = ['https://t.me/zabihN/34','privateRepository.html'];
+        dynamicLinks = ['https://t.me/zabihN/34', 'privateRepository.html'];
         break;
       case 1:
         dynmicTitle = 'Task List taking Website';
