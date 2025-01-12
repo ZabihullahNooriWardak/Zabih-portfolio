@@ -95,11 +95,12 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: '<h6>ChatGPT <br />Conference</h6>',
+    title: '<h6>Movie App</h6>',
     description: ` <p>
-   The ChatGPT Conference Website is dedicated to a conference website focused on exploring the capabilities, advancements, and real-world applications of ChatGPT, an AI-powered language model. 
+   About
+This project is a web application that provides information about different Movies from A Movie API endpoint.
   </p>`,
-    image: 'images/chatgpt.png',
+    image: 'images/Movie.png',
     technology: `  <ul class="button">
     <li>HTML</li>
     <li>CSS</li>
@@ -170,8 +171,11 @@ for (let i = 0; i < 7; i += 1) {
         dynamicLinks = ['https://mathmagicians-ead4.onrender.com/', 'https://github.com/ZabihullahNooriWardak/Math-Magicians'];
         break;
       case 6:
-        dynmicTitle = 'Professional Art Printing Data More';
-        dynamicImage = "<img src='images/availiability.png'>";
+        dynmicTitle = 'Movie App';
+        dynamicImage = "<img src='images/Movie.png'>";
+        dynamicTechnologyStack = ['HTML', 'CSS', 'JavaScript'];
+        dynamicDetails = "This project is a web application that provides information about different Moview. It allows users to explore details such as the Movie name, Picture of various countries. Users can also view comments and add their own insights about specific Movie.";
+        dynamicLinks = ['https://nessrine88.github.io/Capstone-Project2/dist/', 'https://github.com/ZabihullahNooriWardak/Capstone-Project2'];
         break;
       case 0:
         dynmicTitle = 'Uzbek to Persian Dictionary';
