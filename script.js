@@ -56,54 +56,54 @@ const array = [
     button: '  <button class="see">See project</button>',
   },
   {
-    title: ' <h6>Website portfolio</h6> ',
+    title: '<h6>Task List Taking Website</h6>',
     description: ` <p>
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. Has been the industry's standard.
+   Make productivity a lifestyle with this To-Do App. Embrace a well-organized and structured routine, stay focused, and achieve your goals with ease.
   </p>`,
     technology: `  <ul class="button">
     <li>HTML</li>
-    <li>Bootstrap</li>
-    <li>Ruby</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>`,
+    image: 'images/Todo2.png',
+    button: '  <button class="see">See project</button>',
+  },
+  {
+    title: '<h6>ChatGPT <br />Conference</h6>',
+    description: ` <p>
+   The ChatGPT Conference Website is dedicated to a conference website focused on exploring the capabilities, advancements, and real-world applications of ChatGPT, an AI-powered language model. 
+  </p>`,
+    image: 'images/chatgpt.png',
+    technology: `  <ul class="button">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>`,
     button: '  <button class="see">See project</button>',
   },
   {
-    title: ' <h6>Profesional Art <br />Printing Data More</h6>',
+    title: '<h6>Task List Taking Website</h6>',
     description: ` <p>
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. Has been the industry's standard.
+   Make productivity a lifestyle with this To-Do App. Embrace a well-organized and structured routine, stay focused, and achieve your goals with ease.
   </p>`,
     technology: `  <ul class="button">
     <li>HTML</li>
-    <li>Bootstrap</li>
-    <li>Ruby</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>`,
+    image: 'images/Todo2.png',
     button: '  <button class="see">See project</button>',
   },
   {
-    title: '  <h6>Data Dashbord <br />Healthcare</h6>',
+    title: '<h6>ChatGPT <br />Conference</h6>',
     description: ` <p>
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. Has been the industry's standard.
+   The ChatGPT Conference Website is dedicated to a conference website focused on exploring the capabilities, advancements, and real-world applications of ChatGPT, an AI-powered language model. 
   </p>`,
+    image: 'images/chatgpt.png',
     technology: `  <ul class="button">
     <li>HTML</li>
-    <li>Bootstrap</li>
-    <li>Ruby</li>
-  </ul>`,
-    button: '  <button class="see">See project</button>',
-  },
-  {
-    title: '   <h6>Profesional Art <br />Printing Data More</h6>',
-    description: ` <p>
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. Has been the industry's standard.
-  </p>`,
-    technology: `  <ul class="button">
-    <li>HTML</li>
-    <li>Bootstrap</li>
-    <li>Ruby</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>`,
     button: '  <button class="see">See project</button>',
   },
